@@ -220,17 +220,16 @@ body::-webkit-scrollbar-button {
 
 .responsive-title {
     font-size: 2rem !important ; /* Small screen */
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .responsive-title {
-      font-size: 2.5rem !important; /* Medium screens (tablets) */
+        font-size: 2.5rem !important; /* Medium screens (tablets) */
     }
-  }
-  
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .responsive-title {
-      font-size: 4rem !important; /* Large screens (desktops) */
+        font-size: 4rem !important; /* Large screens (desktops) */
     }
-  }
-  
+}

@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Group, Image, Stack, Text, Title } from '@mantine/core';
+import { Button, Flex, Group, Image, Stack, Text, Title } from '@mantine/core';
 import heroAspirants from '../../../assets/ProductLogo/Learning.png';
 
 export const Heropage = () => {

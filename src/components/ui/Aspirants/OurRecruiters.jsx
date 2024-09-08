@@ -5,7 +5,7 @@ import inexoft from '../../../assets/companylogos/inexoft.svg';
 import bni from '../../../assets/companylogos/bni.svg';
 import prospire from '../../../assets/companylogos/prospire.svg';
 import clg from '../../../assets/companylogos/college.svg';
-import inpro from '../../../assets/companylogos/inpro.svg'
+import inpro from '../../../assets/companylogos/inpro.svg';
 
 export const OurRecruiters = () => {
     return (
@@ -30,7 +30,7 @@ const companyLogos = [
     },
     {
         name: 'college',
-        url : clg
+        url: clg
     },
     {
         name: 'KEM',
@@ -52,7 +52,7 @@ const companyLogos = [
         name: 'inpro',
         url: inpro
     },
-    
+
     {
         name: 'Ashok',
         url: 'https://assets.upstox.com/content/assets/images/cms/202452/Ashok-Leyland-Logo.png'
@@ -85,7 +85,6 @@ const companyLogos = [
         url: 'https://www.tataadvancedsystems.com/website/images/logo.png'
     },
 
-   
     {
         name: 'inexoft',
         url: inexoft
@@ -111,4 +110,3 @@ const companyLogos = [
         url: prospire
     }
 ];
-

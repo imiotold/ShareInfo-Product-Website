@@ -29,7 +29,7 @@ const companyLogos = [
     },
     {
         name: 'college',
-        url : clg
+        url: clg
     },
     {
         name: 'KEM',
@@ -68,7 +68,7 @@ const companyLogos = [
         name: 'mazidiktyo',
         url: 'https://www.mazidiktyo.com/images/logo.png'
     },
-    
+
     {
         name: 'deltataero',
         url: 'https://www.deltataero.com/assets/images/logo.png'
@@ -81,12 +81,12 @@ const companyLogos = [
         name: 'mizone',
         url: mizone
     },
-    
+
     {
         name: 'inexoft',
         url: inexoft
     },
-    
+
     {
         name: 'bni',
         url: bni

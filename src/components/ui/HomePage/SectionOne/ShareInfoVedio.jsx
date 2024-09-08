@@ -9,7 +9,7 @@ export const ShareInfoVedio = () => {
                 </Title>
                 <Text ta={'center'}>Bridge Your Ambition and Drive into Success! </Text>
                 <Paper bg={'#0C0C0C'} p={10} style={{ borderRadius: '30px' }} mt={20} shadow='lg'>
-                    <div style={{ position: 'relative', paddingTop: '56.25%'}}>
+                    <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                         <iframe
                             style={{
                                 borderRadius: '23px',
