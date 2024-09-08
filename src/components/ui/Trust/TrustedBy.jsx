@@ -1,14 +1,21 @@
 import { Flex, SimpleGrid, Text, Image } from '@mantine/core';
+import cadd from '../../../assets/companylogos/cadd.svg';
+import mizone from '../../../assets/companylogos/mizone.svg';
+import inexoft from '../../../assets/companylogos/inexoft.svg';
+import bni from '../../../assets/companylogos/bni.svg';
+import prospire from '../../../assets/companylogos/prospire.svg';
+import clg from '../../../assets/companylogos/college.svg';
+import inpro from '../../../assets/companylogos/inpro.svg'
 
 export const TrustedBy = () => {
     return (
         <>
             <Text ta={'center'}>T R U S T E D &nbsp;&nbsp;B Y</Text>
 
-            <SimpleGrid mt={40} cols={{ base: 3, sm: 6 }} spacing={{ base: 'md', sm: 'md' }} verticalSpacing={{ base: 'md', sm: 'md' }}>
+            <SimpleGrid mt={40} cols={{ base: 3, sm: 5 }} spacing={{ base: 'md', sm: 'md' }} verticalSpacing={{ base: 'md', sm: 'md' }}>
                 {companyLogos.map((item, index) => (
                     <Flex key={index} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
-                        <Image fit={'contain'} w={'auto'} h={100} src={item.url} alt={item.name} />
+                        <Image fit={'contain'} w={'auto'} h={70} src={item.url} alt={item.name} />
                     </Flex>
                 ))}
             </SimpleGrid>
@@ -18,52 +25,83 @@ export const TrustedBy = () => {
 
 const companyLogos = [
     {
-        name: 'google',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'
+        name: 'Confederation_of_Indian_Industry',
+        url: 'https://www.cii.in/images_new/cii-logoNew.png'
     },
     {
-        name: 'google',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1280px-Meta_Platforms_Inc._logo.svg.png'
+        name: 'college',
+        url : clg
     },
     {
-        name: 'google',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png'
-    },
-    {
-        name: 'google',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/KPMG_logo.svg'
-    },
-    {
-        name: 'google',
-        url: 'https://worldgbc.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/08/08135440/GSsignature_Blue.png'
-    },
-    {
-        name: 'google',
-        url: 'https://docs.comnoco.com/img/docs/supabase/supabase-logo-wordmark--dark.png'
-    },
-    {
-        name: 'google',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Atlassian-logo.svg/2560px-Atlassian-logo.svg.png'
-    },
-    {
-        name: 'google',
-        url: 'https://cdn.prod.website-files.com/64b6f3636f598299028e8577/65a6ee1dfad0ee04bccb5086_Logo%20(1).svg'
-    },
-    {
-        name: 'google',
-        url: 'https://mintlify.s3-us-west-1.amazonaws.com/commandline/logo/wave-dark.png'
-    },
-    {
-        name: 'google',
-        url: 'https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0b52aa9e99b832574a53_full_logo_blurple_RGB.png'
+        name: 'KEM',
+        url: 'https://skills.knowledgemission.kerala.gov.in/theme/remui/pix/itrack_logo.png'
     },
 
     {
-        name: 'google',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png'
+        name: 'TALROP',
+        url: 'https://s3.ap-south-1.amazonaws.com/talrop.com-react-assets-bucket/assets/images/01-09-2022/Talrop_logo.svg'
+    },
+
+    {
+        name: 'sanseera',
+        url: 'https://sansera.in/wp-content/uploads/2017/06/SanseraLogo.png'
     },
     {
-        name: 'google',
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Zomato_Logo.svg/2560px-Zomato_Logo.svg.png'
+        name: 'tata adv sys',
+        url: 'https://www.tataadvancedsystems.com/website/images/logo.png'
+    },
+
+    {
+        name: 'Ashok',
+        url: 'https://assets.upstox.com/content/assets/images/cms/202452/Ashok-Leyland-Logo.png'
+    },
+    {
+        name: 'Schneider',
+        url: 'https://www.deltoncontrol.com/wp-content/uploads/2020/12/1280px-Schneider_Electric_2007.svg.png'
+    },
+
+    {
+        name: 'caparo',
+        url: 'https://www.itijobs.co/wp-content/uploads/2020/10/new-logo-02.png.webp'
+    },
+
+    {
+        name: 'mazidiktyo',
+        url: 'https://www.mazidiktyo.com/images/logo.png'
+    },
+    
+    {
+        name: 'deltataero',
+        url: 'https://www.deltataero.com/assets/images/logo.png'
+    },
+    {
+        name: 'vikram',
+        url: 'https://www.vikramsolar.com/wp-content/uploads/2022/04/cropped-logo-1.png.webp'
+    },
+    {
+        name: 'mizone',
+        url: mizone
+    },
+    
+    {
+        name: 'inexoft',
+        url: inexoft
+    },
+    
+    {
+        name: 'bni',
+        url: bni
+    },
+    {
+        name: 'cadd',
+        url: cadd
+    },
+    {
+        name: 'daeseung',
+        url: 'https://mapolbs.com/images/clients/daeseung-auto-parts.png'
+    },
+    {
+        name: 'prospire',
+        url: prospire
     }
 ];
