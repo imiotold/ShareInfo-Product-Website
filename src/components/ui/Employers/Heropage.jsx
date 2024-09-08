@@ -4,9 +4,16 @@ import heroAspirants from '../../../assets/ProductLogo/HeroRecruiter.png';
 export const Heropage = () => {
     return (
         <Flex mih={'calc(100dvh - 80px)'} w={'100%'} justify={'center'} align={'center'}>
-            <Flex wrap={'wrap-reverse'} justify={'space-between'} align={'center'} gap={20}>
+            <Flex wrap={'wrap-reverse'} justify={{ base: 'center', md: 'space-between' }} align={'center'} gap={20}>
                 <Stack w={{ base: '90%', md: '40%' }}>
-                    <Title c={'white'} style={{ fontFamily: 'Nunito', fontSize: '4rem', fontWeight: '700' }}>
+                    <Title c={'white'}
+                        style={{
+                            fontFamily: 'Nunito',
+                            fontWeight: 700,
+                            fontSize: '2rem !important',
+                            lineHeight: 1.2
+                        }}
+                        className='responsive-title'>
                         ShareInfo <br /> <span className='text-[#FF6A00]'> For Recruiters</span>
                     </Title>
 
@@ -24,9 +31,9 @@ export const Heropage = () => {
                         </Button>
                     </Group>
                 </Stack>
-                <Box w={{ base: '90%', md: '50%' }}>
+                <Flex align={'center'} justify={'center'} w={{ base: '90%', md: '50%' }}>
                     <Image src={heroAspirants} w={'auto'} />
-                </Box>
+                </Flex>
             </Flex>
         </Flex>
     );

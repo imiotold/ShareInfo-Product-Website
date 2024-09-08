@@ -215,3 +215,22 @@ body::-webkit-scrollbar-button {
 #dbg {
     background-color: #000000 !important;
 }
+
+/* Add this to your global CSS or a scoped CSS file */
+
+.responsive-title {
+    font-size: 2rem !important ; /* Small screen */
+  }
+  
+  @media (min-width: 768px) {
+    .responsive-title {
+      font-size: 2.5rem !important; /* Medium screens (tablets) */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .responsive-title {
+      font-size: 4rem !important; /* Large screens (desktops) */
+    }
+  }
+  

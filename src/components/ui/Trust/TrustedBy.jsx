@@ -5,7 +5,6 @@ import inexoft from '../../../assets/companylogos/inexoft.svg';
 import bni from '../../../assets/companylogos/bni.svg';
 import prospire from '../../../assets/companylogos/prospire.svg';
 import clg from '../../../assets/companylogos/college.svg';
-import inpro from '../../../assets/companylogos/inpro.svg'
 
 export const TrustedBy = () => {
     return (

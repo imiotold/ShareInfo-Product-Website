@@ -8,7 +8,7 @@ import { Featured } from '../ui/Featured/Featured';
 import { Flex } from '@mantine/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Heropage } from '../ui/Employers/Hropage';
+import { Heropage } from '../ui/Employers/Heropage';
 
 export const Employers = () => {
     useEffect(() => {
