@@ -19,8 +19,8 @@ export const Heropage = () => {
                             Explore Resources
                         </Button>
 
-                        <Button color='#951AD7' radius={'md'}>
-                            Join the Community
+                        <Button color='#951AD7' onClick={() => window.open('https://web.shareinfo.io', '_blank')} radius={'md'}>
+                            Get Started
                         </Button>
                     </Group>
                 </Stack>

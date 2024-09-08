@@ -14,7 +14,7 @@ const ProductCardData = [
     },
     {
         title: 'For Recruiters',
-        description: 'Vision to Create 1% Skill inside Campus',
+        description: 'Seamless platfrom to find the top skilled aspirants to the team',
         image: R,
         link: 'aspirants'
     },
@@ -26,7 +26,7 @@ const ProductCardData = [
     },
     {
         title: 'For Mentors',
-        description: 'Vision to Create 1% Skill inside Campus',
+        description: 'Guiding the passioned people to become 1%',
         image: M,
         link: 'aspirants'
     }
@@ -63,7 +63,7 @@ export const SectionTwo = () => {
                         </Text>
 
                         <Flex justify={'space-between'} align={'center'} mt={20} gap={10}>
-                            <Text size='xs' flex={3}>
+                            <Text size='sm' flex={3}>
                                 {item.description}
                             </Text>
                             <ActionIcon variant='filled' color='gray' radius='xl' aria-label='Settings'>
