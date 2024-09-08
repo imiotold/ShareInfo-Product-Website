@@ -1,0 +1,37 @@
+.hoverclass {
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        color: rgb(255, 255, 255);
+        scale: 1.15;
+    }
+}
+
+.linearwipe {
+    background: linear-gradient(to right, #8a1bf6 20%, #f6997f 30%, #facdbf 70%, #8a1bf6 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite;
+}
+
+.linearwipeVision {
+    background: linear-gradient(to right, #414eca 20%, #1b94f6 30%, #ffffff 70%, #1b94f6 80%, #414eca 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
