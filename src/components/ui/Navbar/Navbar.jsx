@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper } from '@mantine/core';
-import { IconExternalLink } from '@tabler/icons-react';
+import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper, ActionIcon } from '@mantine/core';
+import { IconExternalLink, IconX } from '@tabler/icons-react';
 import Logo from '../../../assets/ShareinfoNavLogo.svg';
 import classes from '../../../components/ui/style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
@@ -89,6 +89,7 @@ export const Navbar = () => {
                     size={isMobile ? 'xs' : 'sm'}
                     radius={'md'}
                     color='#F94612'
+                    onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank', 'noopener,noreferrer')}
                     rightSection={<IconExternalLink style={{ width: '70%', height: '70%' }} />}>
                     Get Started
                 </Button>
@@ -96,7 +97,21 @@ export const Navbar = () => {
 
             <Drawer opened={drawerOpened} onClose={() => setDrawerOpened(false)} size='sm' withCloseButton={false}>
                 <Paper>
-                    <Flex mt={70} p={20} direction={'column'}>
+                    <Group p={20} justify='space-between'>
+                        <Image
+                            onClick={() => {
+                                navigate('/');
+                                localStorage.clear();
+                            }}
+                            w={'130'}
+                            src={Logo}
+                        />
+                        <ActionIcon onClick={() => setDrawerOpened(false)} radius={'xl'} variant='default' size='md'>
+                            <IconX />
+                        </ActionIcon>
+                    </Group>
+
+                    <Flex p={20} direction={'column'}>
                         <Text size='lg' fw={600} variant='gradient' gradient={{ from: 'blue', to: 'white', deg: 90 }}>
                             ShareInfo suites
                         </Text>

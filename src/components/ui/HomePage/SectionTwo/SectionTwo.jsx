@@ -4,35 +4,44 @@ import A from '../../../../assets/ProductLogo/ShareInfoForAspirants.svg';
 import R from '../../../../assets/ProductLogo/ShareInfoForRecruiters.svg';
 import C from '../../../../assets/ProductLogo/ShareInfoForCampus.svg';
 import M from '../../../../assets/ProductLogo/ShareInfoForMentors.svg';
+import { useNavigate } from 'react-router-dom';
 
 const ProductCardData = [
     {
         title: 'For Aspirants',
-        description: 'Vision to Create 1% Skill inside Campus',
+        description: 'To Create the Top 1% Tech Enthusiasts',
         image: A,
         link: 'aspirants'
     },
     {
         title: 'For Recruiters',
-        description: 'Seamless platfrom to find the top skilled aspirants to the team',
+        description: 'Seamlessly find top skilled aspirants to your team',
         image: R,
-        link: 'aspirants'
+        link: 'employers'
     },
     {
         title: 'For Campus',
         description: 'Vision to Create 1% Skill inside Campus',
         image: C,
-        link: 'aspirants'
+        link: 'campus'
     },
     {
         title: 'For Mentors',
         description: 'Guiding the passioned people to become 1%',
         image: M,
-        link: 'aspirants'
+        link: '#'
     }
 ];
 
 export const SectionTwo = () => {
+
+    const navigate = useNavigate();
+
+    const handleClick = (link) => {
+        navigate(`${link}`);
+    }
+
+
     return (
         <>
             <Flex justify={'center'} align={'center'} direction={'column'}>
@@ -51,7 +60,7 @@ export const SectionTwo = () => {
                 spacing={{ base: 'md', sm: 'xl' }}
                 verticalSpacing={{ base: 'md', sm: 'xl' }}>
                 {ProductCardData.map((item, index) => (
-                    <Paper key={index} className='ProductCard' bg={'#090C0D'} p={30} radius={'lg'} w='100%'>
+                    <Paper onClick={() => handleClick(item.link)} key={index} className='ProductCard' bg={'#090C0D'} p={30} radius={'lg'} w='100%' style={{ cursor: 'pointer' }} >
                         <Box w={80}>
                             <Image src={item.image} w={'100%'} />
                         </Box>

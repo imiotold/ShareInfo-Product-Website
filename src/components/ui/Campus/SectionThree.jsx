@@ -1,5 +1,8 @@
 import { Flex, Title, Text, Paper } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
+import ved1 from '../../../assets/video/one.mp4'
+import ved2 from '../../../assets/video/two.mp4'
+
 
 export const SectionThree = () => {
     const isMobile = useMediaQuery('(max-width: 768px)');
@@ -7,7 +10,7 @@ export const SectionThree = () => {
     return (
         <>
             <Flex mih={'100vh'} py={50} justify={'center'} align={'center'} direction={'column'}>
-                <Text>TESTIMONIALS</Text>
+                {/* <Text>TESTIMONIALS</Text> */}
                 <Title c={'white'} style={{ fontFamily: 'Nunito' }} order={1} ta={'center'}>
                     They are in Action
                 </Title>
@@ -15,9 +18,16 @@ export const SectionThree = () => {
 
                 <Flex direction={isMobile ? 'column' : 'row'} gap={50} justify={'center'} align={'center'} wrap={'wrap'}>
                     <Flex mt={20} w={{ base: '80%', sm: '30%' }} direction={'column'}>
-                        <Paper radius={'lg'} bg={'gray'} h={'70vh'}></Paper>
+                    <Paper style={{ borderRadius: '23px' }} mt={{ sm: 150 }} bg={'gray'} h={'70vh'}>
+                        <video style={{ borderRadius: '23px' }} loop autoPlay muted>
+                            <source
+                                src={ved2}
+                                type='video/mp4'
+                            />
+                        </video>
+                        </Paper>
                         <Title mt={20} c={'white'} style={{ fontFamily: 'Nunito' }} order={4}>
-                            Unlocking insights in scientific literature
+                        Build Your Aspiration Stronger
                         </Title>
                         <Text mt={10} size='xs'>
                             Core Function: Manages campus placements, including student profiles, company requirements, and the matching
@@ -25,9 +35,19 @@ export const SectionThree = () => {
                         </Text>
                     </Flex>
                     <Flex w={{ base: '80%', sm: '30%' }} direction={'column'}>
-                        <Paper radius={'lg'} mt={{ sm: 150 }} bg={'gray'} h={'70vh'}></Paper>
+
+                        <Paper style={{ borderRadius: '23px' }} mt={{ sm: 150 }} bg={'gray'} h={'70vh'}>
+                        <video style={{ borderRadius: '23px' }} loop autoPlay muted>
+                            <source
+                                src={ved1}
+                                type='video/mp4'
+                            />
+                        </video>
+                        </Paper>
+                        
+
                         <Title mt={20} c={'white'} style={{ fontFamily: 'Nunito' }} order={4}>
-                            Unlocking insights in scientific literature
+                        Crack Your Dream Company with us
                         </Title>
                         <Text mt={10} size='xs'>
                             Core Function: Manages campus placements, including student profiles, company requirements, and the matching

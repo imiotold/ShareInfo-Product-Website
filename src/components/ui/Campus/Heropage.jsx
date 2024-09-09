@@ -19,8 +19,7 @@ export const Heropage = () => {
                     </Title>
 
                     <Text c={'dimmed'} size='lg'>
-                        Empowering the next generation of tech professionals with curated resources, expert guidance, and a community of
-                        passionate learners.
+                    Connect with top companies for campus placements. ShareInfo simplifies the process, making it easy to invite companies to your campus.
                     </Text>
                     <Group>
                         <Button color='#631BE0' radius={'md'} variant='light'>

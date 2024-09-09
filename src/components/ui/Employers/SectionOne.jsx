@@ -2,19 +2,19 @@ import { Flex, Title, Text, Card, Group, Image, SimpleGrid } from '@mantine/core
 export const SectionOne = () => {
     const cardData = [
         {
-            image: 'https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=1060&t=st=1722788285~exp=1722788885~hmac=a5fa4b3d6785a8ba8cd0f54507dc922cca8efd3b6257f4ab6bfce89fe0f06779',
+            image: 'https://images.unsplash.com/photo-1698047681432-006d2449c631?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Pre-qualified Candidates',
-            description: 'State-of-the-art performance across a range of industry benchmarks.'
+            description: 'Access a pool of pre-qualified candidates. Our platform streamlines the hiring process, saving you time and effort.'
         },
         {
-            image: 'https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=1060&t=st=1722788285~exp=1722788885~hmac=a5fa4b3d6785a8ba8cd0f54507dc922cca8efd3b6257f4ab6bfce89fe0f06779',
+            image: 'https://plus.unsplash.com/premium_photo-1679936309175-a05d90c7241e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Reduced Time-to-Hire',
-            description: 'State-of-the-art performance across a range of industry benchmarks.'
+            description: 'Accelerate your hiring process. Our platform streamlines the recruitment process, helping you find top talent faster.'
         },
         {
-            image: 'https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=1060&t=st=1722788285~exp=1722788885~hmac=a5fa4b3d6785a8ba8cd0f54507dc922cca8efd3b6257f4ab6bfce89fe0f06779',
+            image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Enhanced Employer Branding',
-            description: 'State-of-the-art performance across a range of industry benchmarks.'
+            description: 'Boost your employer brand. Our platform helps you showcase your company culture and values to attract top talent.'
         }
     ];
 
@@ -33,16 +33,16 @@ export const SectionOne = () => {
                 {cardData.map((item, index) => (
                     <Card bg={'#090C0D'} key={index} shadow='sm' padding='lg' radius='lg'>
                         <Card.Section>
-                            <Image src={item.image} h={120} />
+                            <Image src={item.image} h={150} />
                         </Card.Section>
 
                         <Group justify='space-between' mt='md' mb='xs'>
-                            <Text c={'white'} fw={500}>
+                            <Text c={'white'} size='lg' fw={700}>
                                 {item.title}
                             </Text>
                         </Group>
 
-                        <Text size='sm' c='dimmed'>
+                        <Text size='md' c='dimmed'>
                             {item.description}
                         </Text>
                     </Card>

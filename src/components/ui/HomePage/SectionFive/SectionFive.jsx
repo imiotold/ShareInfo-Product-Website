@@ -54,7 +54,15 @@ export const SectionFive = () => {
                 spacing={{ base: 10, sm: 10 }}
                 verticalSpacing={{ base: 10, sm: 10 }}>
                 {features.map((feature, index) => (
-                    <Paper bg={'#090C0D'} key={index} className='CapableCard' radius={'lg'} w='100%'>
+                    <Paper
+                        onClick={() => {
+                            feature.link === '#' ? '' : window.open(feature.link, '_blank');
+                        }}
+                        bg={'#090C0D'}
+                        key={index}
+                        className='CapableCard'
+                        radius={'lg'}
+                        w='100%'>
                         <Flex p={30} direction={'column'} align={{ base: 'center', sm: 'start' }}>
                             <ActionIcon variant='light' color={'orange'} size='xl' radius='md' aria-label='Settings'>
                                 {feature.icon}
@@ -85,21 +93,25 @@ const features = [
     {
         title: 'Imiot LearnSpace',
         description: 'Enjoy a smooth and efficient process from start to finish.',
-        icon: <IconStarsFilled style={{ width: '70%', height: '70%' }} stroke={1.5} />
+        icon: <IconStarsFilled style={{ width: '70%', height: '70%' }} stroke={1.5} />,
+        link: '#'
     },
     {
         title: 'Vision 2028',
         description: 'Leverage data to make informed decisions.',
-        icon: <IconTargetArrow style={{ width: '70%', height: '70%' }} stroke={1.5} />
+        icon: <IconTargetArrow style={{ width: '70%', height: '70%' }} stroke={1.5} />,
+        link: '#'
     },
     {
         title: 'Find Talent',
         description: 'Use AI to find the perfect match for your needs.',
-        icon: <IconSparkles style={{ width: '70%', height: '70%' }} stroke={1.5} />
+        icon: <IconSparkles style={{ width: '70%', height: '70%' }} stroke={1.5} />,
+        link: 'https://recruiter.shareinfo.io/'
     },
     {
         title: 'ShareInfo AI',
-        description: 'Rigorous quality checks and processes.',
-        icon: <IconBrain style={{ width: '70%', height: '70%' }} stroke={1.5} />
+        description: 'The Future of Job Hunting Find your dream job faster with tailored opportunities.',
+        icon: <IconBrain style={{ width: '70%', height: '70%' }} stroke={1.5} />,
+        link: '#'
     }
 ];

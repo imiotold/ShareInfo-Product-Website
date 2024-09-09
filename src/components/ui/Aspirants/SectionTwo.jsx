@@ -1,33 +1,42 @@
 import { Text, Title, Flex, Card, Group, Button, Box } from '@mantine/core';
 import { IconExternalLink } from '@tabler/icons-react';
+import { useNavigate } from 'react-router-dom';
+
 
 const cardData = [
     {
         title: 'Students',
         description:
-            'Land Your Dream Job: Live Competition and Simulated Placements, Live Competition: Creates a sense of urgency and highlights the chance to stand out among peers.',
+            <div>Fuel Your Tech Ambition: Your Path to Success Starts Here. Gain the skills, confidence, and connections you need to excel in tech with ShareInfo&#39;s comprehensive resources.</div>,
         link: 'linkhere'
     },
     {
         title: 'Freshers',
         description:
-            'Land Your Dream Job: Live Competition and Simulated Placements, Live Competition: Creates a sense of urgency and highlights the chance to stand out among peers.',
+            <div>Future tech leaders! Join us and unlock your potential. At ShareInfo, we&#39;re committed to nurturing the next generation of tech talent.</div>,
         link: 'linkhere'
     },
     {
         title: 'Professionals',
         description:
-            'Land Your Dream Job: Live Competition and Simulated Placements, Live Competition: Creates a sense of urgency and highlights the chance to stand out among peers.',
+            <div>Accelerate your journey to the top with ShareInfo. Our platform provides the resources, connections, and mentorship you need to excel in today&#39;s competitive tech landscape.</div>,
         link: 'linkhere'
     },
     {
         title: 'Career Up-Scale',
         description:
-            'Land Your Dream Job: Live Competition and Simulated Placements, Live Competition: Creates a sense of urgency and highlights the chance to stand out among peers.',
+            'Build a strong professional network: Connect with like-minded professionals and industry experts to expand your opportunities',
         link: 'linkhere'
     }
 ];
 export const SectionTwo = () => {
+
+    const navigate = useNavigate();
+
+    const handleClick = (link) => {
+        navigate(`${link}`);
+    }
+
     return (
         <>
             <Title c={'white'} style={{ fontFamily: 'Nunito' }} order={1} ta={'center'}>
@@ -36,9 +45,9 @@ export const SectionTwo = () => {
             </Title>
             <Text ta={'center'}>With Our Intelligent System </Text>
 
-            <Flex gap={20} mt={40} direction={'column'} justify={'center'} align={'center'} wrap={'wrap'}>
+            <Flex w={'100%'} gap={20} mt={40} direction={'column'} justify={'center'} align={'center'} wrap={'wrap'}>
                 {cardData.map((item, index) => (
-                    <Card key={index} bg={'#090C0D'} shadow='sm' padding='lg' radius='lg'>
+                    <Card w={'100%'} key={index} bg={'#090C0D'} shadow='sm' padding='lg' radius='lg'>
                         <Group align='center' justify='space-between'>
                             <Box w={'80%'}>
                                 <Text size='lg' c={'white'} fw={500}>
@@ -48,7 +57,7 @@ export const SectionTwo = () => {
                                     {item.description}
                                 </Text>
                             </Box>
-                            <Button rightSection={<IconExternalLink size={14} />} radius={'md'} color='black'>
+                            <Button  onClick={() => handleClick('/learning')} rightSection={<IconExternalLink size={14} />} radius={'md'} color='black'>
                                 Get Started
                             </Button>
                         </Group>

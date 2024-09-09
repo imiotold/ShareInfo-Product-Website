@@ -61,6 +61,7 @@ export const CaseStudies = () => {
                 size='lg'
                 radius={'md'}
                 color='#414ECA'
+                onClick={() => window.open('https://careers.imiot.co.in/', '_blank', 'noopener,noreferrer')}
                 rightSection={<IconBow style={{ width: '70%', height: '70%' }} />}>
                 Start Your FREE Trial Now
             </Button>
@@ -71,14 +72,14 @@ export const CaseStudies = () => {
 const paperWithButtonData = [
     {
         title: 'Validation',
-        description: 'Case studies demonstrate the platform&apos;s effectiveness in connecting qualified candidates with employers',
+        description: 'We bridge the gap between theory and practice, equipping students with practical skills for the job market.',
         icon: <IconRosetteDiscountCheck style={{ width: rem(16), height: rem(16) }} />,
         color: 'indigo'
     },
     {
         title: 'Actionable Insights',
         description:
-            'They offer practical guidance to aspiring candidates. By seeing how others succeeded,they can replicate those strategies',
+            'A Collaborative Approach to Bridge the Gap Between Theoretical Knowledge and Practical Application',
         icon: <IconActivity style={{ width: rem(16), height: rem(16) }} />,
         color: 'blue'
     }
@@ -87,13 +88,13 @@ const paperWithButtonData = [
 const caseStudyData = [
     {
         date: 'May 23',
-        description: 'Institution and Industry Bridging with Skills and Practice',
+        description: 'Real-World Learning for Industry Success',
         imageUrl:
             'https://images.unsplash.com/photo-1687463221023-02f259da7d77?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         date: 'June 10',
-        description: 'Institution and Industry Bridging with Skills and Practice',
+        description: 'Industry-Academia Collaboration',
         imageUrl:
             'https://images.unsplash.com/photo-1687463221020-b8769b32c622?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }

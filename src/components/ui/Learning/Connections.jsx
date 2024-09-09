@@ -74,8 +74,8 @@ const features = [
         icon: <IconHelpCircle style={{ width: '70%', height: '70%' }} stroke={1.5} />
     },
     {
-        title: 'Industry Insights',
-        description: 'Mentors can share valuable insights into the latest trends and developments in the tech industry.',
+        title: 'Realtime Assistance',
+        description: <div>Don&#39;t let technical hurdles hold you back. With Realtime Assistance, you&#39;ll have a dedicated mentor to support you every step of the way.</div>,
         icon: <IconTrendingUp style={{ width: '70%', height: '70%' }} stroke={1.5} />
     }
 ];

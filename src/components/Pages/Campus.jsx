@@ -32,7 +32,7 @@ export const Campus = () => {
                     </div>
                     <div data-aos='fade-up' data-aos-duration='2000'>
                         <Flex justify={'center'}>
-                            <Text c={'blue'} w={{ base: '90%', md: '50%' }} ta={'center'}>
+                            <Text size='lg' c={'blue'} w={{ base: '90%', md: '55%' }} ta={'center'}>
                                 Smart Matching: Recommends suitable candidates to companies based on skills, experience, and academic
                                 performance (compared to traditional keyword-based searches)
                             </Text>
@@ -45,7 +45,7 @@ export const Campus = () => {
 
                     <div data-aos='fade-up' data-aos-duration='2000'>
                         <Flex justify={'center'}>
-                            <Text w={{ base: '90%', md: '50%' }} ta={'center'}>
+                            <Text size='lg' w={{ base: '90%', md: '55%' }} ta={'center'}>
                                 Smart Matching: Recommends suitable candidates to companies based on skills, experience, and academic
                                 performance (compared to traditional keyword-based searches) Provides students with personalized job
                                 recommendations and career guidance.

@@ -1,7 +1,16 @@
 import { Button, Flex, Group, Image, Stack, Text, Title } from '@mantine/core';
 import heroAspirants from '../../../assets/ProductLogo/HeroAspirants.png';
+import { useNavigate } from 'react-router-dom';
 
 export const Heropage = () => {
+
+    const navigate = useNavigate();
+
+    const handleClick = (link) => {
+        navigate(`${link}`);
+    }
+
+
     return (
         <Flex mih={'calc(100dvh - 80px)'} w={'100%'} justify={'center'} align={'center'}>
             <Flex wrap={'wrap-reverse'} justify={{ base: 'center', md: 'space-between' }} align={'center'} gap={20}>
@@ -24,7 +33,7 @@ export const Heropage = () => {
                         passionate learners.
                     </Text>
                     <Group>
-                        <Button color='#951AD7' radius={'md'} variant='light'>
+                        <Button color='#951AD7' onClick={() => handleClick('/learning')} radius={'md'} variant='light'>
                             Explore Resources
                         </Button>
 

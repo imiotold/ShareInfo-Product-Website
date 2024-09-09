@@ -2,19 +2,19 @@ import { Flex, Title, Text, Card, Image, SimpleGrid } from '@mantine/core';
 export const SectionOne = () => {
     const cardData = [
         {
-            image: 'https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=1060&t=st=1722788285~exp=1722788885~hmac=a5fa4b3d6785a8ba8cd0f54507dc922cca8efd3b6257f4ab6bfce89fe0f06779',
-            title: 'Practice Ultimate',
-            description: 'State-of-the-art performance across a range of industry benchmarks.'
+            image: 'https://plus.unsplash.com/premium_photo-1706191097326-cd317671d1fb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Plan Career with Experts',
+            description: 'Navigate your career journey with confidence. Our expert coaches will guide you through self-discovery, goal setting, and strategic planning, helping you achieve your professional aspirations.'
         },
         {
-            image: 'https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=1060&t=st=1722788285~exp=1722788885~hmac=a5fa4b3d6785a8ba8cd0f54507dc922cca8efd3b6257f4ab6bfce89fe0f06779',
-            title: 'Practice Ultimate',
-            description: 'State-of-the-art performance across a range of industry benchmarks.'
+            image: 'https://images.unsplash.com/photo-1611348586755-53860f7ae57a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Learn from Scratch',
+            description: <div>Immerse yourself in real-world scenarios and apply your knowledge to solve practical problems. Our carefully crafted projects will challenge you to think critically.</div>
         },
         {
-            image: 'https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=1060&t=st=1722788285~exp=1722788885~hmac=a5fa4b3d6785a8ba8cd0f54507dc922cca8efd3b6257f4ab6bfce89fe0f06779',
-            title: 'Practice Ultimate',
-            description: 'State-of-the-art performance across a range of industry benchmarks.'
+            image: 'https://images.unsplash.com/photo-1611532736570-dd6b097ecbb3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Practice with Real Tasks',
+            description: 'Practice with real-world projects designed to simulate real-world scenarios. Develop practical skills, get feedback from peers, and learn by doing realtime projects'
         }
     ];
 
@@ -29,7 +29,7 @@ export const SectionOne = () => {
 
             <SimpleGrid
                 mt={40}
-                cols={{ base: 1, sm: 3, lg: 3 }}
+                cols={{ base: 1, sm: 2, lg: 3 }}
                 spacing={{ base: 'lg', sm: 'lg' }}
                 verticalSpacing={{ base: 'lg', sm: 'lg' }}>
                 {cardData.map((item, index) => (
@@ -38,11 +38,11 @@ export const SectionOne = () => {
                             <Image src={item.image} h={180} />
                         </Card.Section>
 
-                        <Text mt='md' mb='xs' ta={'center'} c={'white'} fw={500}>
+                        <Text mt='md' mb='xs' size='xl'  c={'white'} fw={700}>
                             {item.title}
                         </Text>
 
-                        <Text ta={'center'} size='sm' c='dimmed'>
+                        <Text  size='md' c='dimmed'>
                             {item.description}
                         </Text>
                     </Card>

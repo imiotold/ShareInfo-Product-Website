@@ -48,10 +48,6 @@ const companyLogos = [
         name: 'mizone',
         url: mizone
     },
-    {
-        name: 'inpro',
-        url: inpro
-    },
 
     {
         name: 'Ashok',
@@ -89,10 +85,7 @@ const companyLogos = [
         name: 'inexoft',
         url: inexoft
     },
-    {
-        name: 'inpro',
-        url: inpro
-    },
+    
     {
         name: 'bni',
         url: bni

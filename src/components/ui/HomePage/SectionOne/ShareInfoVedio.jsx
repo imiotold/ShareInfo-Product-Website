@@ -11,6 +11,7 @@ export const ShareInfoVedio = () => {
                 <Paper bg={'#0C0C0C'} p={10} style={{ borderRadius: '30px' }} mt={20} shadow='lg'>
                     <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                         <iframe
+                            
                             style={{
                                 borderRadius: '23px',
                                 position: 'absolute',
@@ -19,7 +20,7 @@ export const ShareInfoVedio = () => {
                                 width: '100%',
                                 height: '100%'
                             }}
-                            src='https://www.youtube.com/embed/5mdvSLZGXh0?si=lNTo_bh5RaadAh_y'
+                            src='https://www.youtube.com/embed/NZE0Pfs4c9A?si=NLUqdHqu9Hvz9LnR'
                             title='YouTube video player'
                             frameBorder='0'
                             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'

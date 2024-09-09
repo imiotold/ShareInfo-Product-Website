@@ -1,30 +1,41 @@
 import { Card, Title, Flex, Text, Button, Group, Image, Paper } from '@mantine/core';
-import brainImage from '../../../assets/brain.svg';
 import { useMediaQuery } from '@mantine/hooks';
+import { useNavigate } from 'react-router-dom';
 
 const cardData = [
     {
-        imageUrl: brainImage,
+        imageUrl:
+            'https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: 'Practice with Real Tasks',
-        description: 'Provides context for the competition, replicating a real-world scenario to help you hone your skills effectively.',
+        description:
+            'Navigate your career journey with confidence. Our expert coaches will guide you through self-discovery, goal setting, and strategic planning, helping you achieve your professional aspirations.',
         button: 'ShareInfo Challenges'
     },
     {
-        imageUrl: brainImage,
+        imageUrl:
+            'https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: 'Learn from Scratch',
-        description: 'Provides context for the competition, replicating a real-world scenario to help you hone your skills effectively.',
+        description:
+            'Immerse yourself in real-world scenarios and apply your knowledge to solve practical problems. Our carefully crafted projects will challenge you to think critically.',
         button: 'ShareInfo Courses'
     },
     {
-        imageUrl: brainImage,
+        imageUrl:
+            'https://images.unsplash.com/photo-1531537571171-a707bf2683da?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: 'Plan Career with Experts',
-        description: 'Provides context for the competition, replicating a real-world scenario to help you hone your skills effectively.',
+        description:
+            'Practice with real-world projects designed to simulate real-world scenarios. Develop practical skills, get feedback from peers, and learn by doing realtime projects',
         button: 'ShareInfo Connections'
     }
 ];
 
 export const SectionThree = () => {
     const isMobile = useMediaQuery('(max-width: 768px)');
+    const navigate = useNavigate();
+
+    const handleClick = (link) => {
+        navigate(`${link}`);
+    };
 
     return (
         <Card
@@ -47,7 +58,7 @@ export const SectionThree = () => {
                         }}>
                         <Group justify='center'>
                             <Paper my={20} radius={'lg'} bg={'#7857FB'} w={'100'} h={'100'}>
-                                <Image src={item.imageUrl} w={'100%'} />
+                                <Image fit='cover' radius={'lg'} src={item.imageUrl} h={'100%'} />
                             </Paper>
                         </Group>
 
@@ -58,7 +69,7 @@ export const SectionThree = () => {
                             {item.description}
                         </Text>
                         <Group mt={20} justify='center'>
-                            <Button color='#9570F8' radius='md'>
+                            <Button onClick={() => handleClick('/learning')} color='#9570F8' radius='md'>
                                 {item.button}
                             </Button>
                         </Group>
@@ -66,7 +77,7 @@ export const SectionThree = () => {
                 ))}
             </Flex>
             <Group mt={30} justify='center'>
-                <Button color='#9570F8' radius='md'>
+                <Button onClick={() => handleClick('/learning')} color='#9570F8' radius='md'>
                     Explore our Complete Range of Tutorials and Guides
                 </Button>
             </Group>

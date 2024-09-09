@@ -19,15 +19,15 @@ export const Heropage = () => {
                     </Title>
 
                     <Text c={'dimmed'} size='lg'>
-                        Empowering the next generation of tech professionals with curated resources, expert guidance, and a community of
-                        passionate learners.
+                        By leveraging ShareInfo's resources, you can effectively prepare for campus placements, increase your chances of
+                        landing your dream job, and embark on a successful career journey.
                     </Text>
                     <Group>
-                        <Button color='#009F9D' radius={'md'} variant='light'>
+                        <Button onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank')} color='#009F9D' radius={'md'} variant='light'>
                             Explore Resources
                         </Button>
 
-                        <Button color='#009F9D' radius={'md'}>
+                        <Button onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank')} color='#009F9D' radius={'md'}>
                             Join the Community
                         </Button>
                     </Group>

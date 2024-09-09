@@ -1,5 +1,6 @@
 import { Paper, Title, Text, Box, Group, Button, Flex, ActionIcon } from '@mantine/core';
 import { IconExternalLink, IconTargetArrow } from '@tabler/icons-react';
+import vedio from '../../../../assets/video/mission.mp4'
 export const MisiionShareInfo = () => {
     return (
         <>
@@ -16,19 +17,19 @@ export const MisiionShareInfo = () => {
                         </Group>
 
                         <Text ta={'justify'}>
-                            ShareInfo is committed to diversity and inclusion. We&apos;re proud to partner with a company that shares our
-                            values. Listen what they are saying about us !
-                            <br />
-                            <br />
-                            ShareInfo is an AI-powered recruitment platform that connects companies with top talent across the globe. By
-                            streamlining the recruitment process and providing valuable insights, ShareInfo helps businesses make informed
-                            hiring decisions and build diverse, inclusive workplaces. It is the perfect solution for companies of all sizes
-                            looking to simplify their hiring and empower their future. Join thousands of companies already experiencing the
-                            ShareInfo difference and see what our customers are saying: &quot;ShareInfo streamlined our hiring process like
-                            magic! We found our perfect candidate in just two weeks.&quot; - Sarah Michaels, HR Manager, Bloom Flowers.
-                            Start your free trial today and experience the ShareInfo difference for yourself!
-                            <br />
-                            <br />
+                            Empowering Students, Shaping the Future. At ShareInfo, we're passionate about bridging the gap between academia
+                            and industry. We're on a mission to empower students, especially those from tier 2 and tier 3 campuses, with the
+                            skills and opportunities they need to succeed in today's competitive job market.
+                            <br /> <br />
+                            Our platform connects aspiring professionals with top companies and industry mentors, providing access to a
+                            wealth of resources, including unlimited projects and expert guidance. By immersing students in real-world
+                            challenges and fostering a collaborative learning environment, we equip them with the practical skills and
+                            confidence they need to thrive in their careers.
+                            <br /> <br />
+                            Our vision for 2028 is ambitious: we aim to increase on-campus hiring by 40-50%. By achieving this goal, we'll
+                            not only help more students land their dream jobs but also contribute to the growth and innovation of the tech
+                            industry
+                            <br /> <br />
                         </Text>
                         <Button
                             size='md'
@@ -41,8 +42,8 @@ export const MisiionShareInfo = () => {
                 </Paper>
 
                 <Paper bg={'#2B2B2B'} p={10} style={{ borderRadius: '30px', zIndex: 99 }} shadow='lg'>
-                    <video style={{ borderRadius: '23px' }} autoPlay muted>
-                        <source src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' type='video/mp4' />
+                    <video style={{ borderRadius: '23px' }} loop autoPlay muted>
+                        <source src={vedio} type='video/mp4' />
                     </video>
                 </Paper>
             </Flex>

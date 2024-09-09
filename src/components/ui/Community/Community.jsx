@@ -29,7 +29,7 @@ export const Community = () => {
             <SimpleGrid
                 className='CapableGrid'
                 mt={50}
-                cols={{ base: 3, sm: 3, lg: 3 }}
+                cols={{ base: 1, sm: 2, lg: 3 }}
                 spacing={{ base: 10, sm: 10 }}
                 verticalSpacing={{ base: 10, sm: 10 }}>
                 {features.map((feature, index) => (

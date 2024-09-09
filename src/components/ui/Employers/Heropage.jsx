@@ -19,11 +19,11 @@ export const Heropage = () => {
                     </Title>
 
                     <Text c={'dimmed'} size='lg'>
-                        Empowering the next generation of tech professionals with curated resources, expert guidance, and a community of
-                        passionate learners.
+                        Seamlessly discover and connect with top talent possessing the right skills to enhance your team’s potential and
+                        growth.
                     </Text>
                     <Group>
-                        <Button color='#FF6A00' radius={'md'} variant='light'>
+                        <Button onClick={() => window.open('https://recruiter.shareinfo.io', '_blank')} color='#FF6A00' radius={'md'} variant='light'>
                             Explore Resources
                         </Button>
 

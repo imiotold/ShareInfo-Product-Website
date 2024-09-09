@@ -51,9 +51,9 @@ export const HomePage = () => {
                     <div data-aos='fade-up' data-aos-duration='2000'>
                         <SectionThree />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    {/* <div data-aos='fade-up' data-aos-duration='2000'>
                         <SectionFour />
-                    </div>
+                    </div> */}
                     <div data-aos='fade-up' data-aos-duration='2000'>
                         <ForLearn />
                     </div>
@@ -63,9 +63,9 @@ export const HomePage = () => {
                     <div>
                         <TrustedBy />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    {/* <div data-aos='fade-up' data-aos-duration='2000'>
                         <WhyTheyTrust />
-                    </div>
+                    </div> */}
                     <div data-aos='fade-up' data-aos-duration='2000'>
                         <MisiionShareInfo />
                     </div>
