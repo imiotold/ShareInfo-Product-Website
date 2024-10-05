@@ -6,7 +6,7 @@ export const Featured = () => {
         <>
             <Flex justify={'center'} align={'center'} direction={'column'}>
                 <Title c={'white'} style={{ fontFamily: 'Nunito' }} order={1} ta={'center'}>
-                    We Were Featured at
+                    Why We Recommend ShareInfo for You!!
                 </Title>
                 <Text ta={'center'}>
                     Kickstart Your Career with ShareInfo, We assure it will <br /> be Your Perfect Placement Companion

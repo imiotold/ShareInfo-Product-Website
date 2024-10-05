@@ -55,7 +55,7 @@ const features = [
     },
     {
         title: 'Industry Insights',
-        description: 'Mentors can share valuable insights into the latest trends and developments in the tech industry.',
+        description: 'Mentors can offer valuable insights into the cutting-edge developments in the tech industry.',
         icon: <IconTrendingUp style={{ width: '70%', height: '70%' }} stroke={1.5} />
     },
     {
@@ -75,7 +75,7 @@ const features = [
     },
     {
         title: 'Realtime Assistance',
-        description: <div>Don&#39;t let technical hurdles hold you back. With Realtime Assistance, you&#39;ll have a dedicated mentor to support you every step of the way.</div>,
+        description: <div>Overcome technical challenges with ease. Get personalized support from a dedicated mentor.</div>,
         icon: <IconTrendingUp style={{ width: '70%', height: '70%' }} stroke={1.5} />
     }
 ];
