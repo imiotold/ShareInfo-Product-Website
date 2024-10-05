@@ -29,7 +29,7 @@ const ProductCardData = [
         title: 'For Mentors',
         description: 'Guiding the passioned people to become 1%',
         image: M,
-        link: '#'
+        link: 'learning'
     }
 ];
 

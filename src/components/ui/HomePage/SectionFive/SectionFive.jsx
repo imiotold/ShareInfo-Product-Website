@@ -94,7 +94,7 @@ const features = [
         title: 'Imiot LearnSpace',
         description: 'Enjoy a smooth and efficient process from start to finish.',
         icon: <IconStarsFilled style={{ width: '70%', height: '70%' }} stroke={1.5} />,
-        link: '#'
+        link: '/learning'
     },
     {
         title: 'Vision 2028',

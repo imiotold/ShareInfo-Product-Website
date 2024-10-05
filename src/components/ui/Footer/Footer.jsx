@@ -1,5 +1,5 @@
 import { Flex, Stack, Text, Group, Badge, Box, Image, Divider, Anchor, ActionIcon } from '@mantine/core';
-// import ImiotLogo from '../../../assets/ImiotLogo.png';
+import ImiotLogo from '../../../assets/Imiot.png';
 import ShareInfoLogo from '../../../assets/ShareinfoNavLogo.svg';
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconBrandYoutube } from '@tabler/icons-react';
 // import FluidWall from '../../../assets/fluu.png';
@@ -23,7 +23,13 @@ export const Footer = () => {
                         <Text c={'white'} fw={700} size='sm'>
                             About
                         </Text>
-                        <Anchor size='sm' c={'#C9C9C9'} href='#' target='_blank' underline='never'>
+                        <Anchor
+                            size='sm'
+                            onClick={() => window.open('https://imiot.co.in/', '_blank')}
+                            c={'#C9C9C9'}
+                            href='#'
+                            target='_blank'
+                            underline='never'>
                             Our journey
                         </Anchor>
                         <Anchor size='sm' c={'#C9C9C9'} href='/support' underline='never'>
@@ -61,12 +67,12 @@ export const Footer = () => {
                         <Anchor size='sm' c={'#C9C9C9'} href='#' target='_blank' underline='never'>
                             Pricing
                         </Anchor>
-                        <Anchor size='sm' c={'#C9C9C9'} href='#' target='_blank' underline='never'>
+                        <Anchor size='sm' c={'#C9C9C9'} href='https://discord.gg/JZx5eCuz' target='_blank' underline='never'>
                             Community
                         </Anchor>
 
                         <Group>
-                            <Anchor size='sm' c={'#C9C9C9'} href='/changelog'  underline='never'>
+                            <Anchor size='sm' c={'#C9C9C9'} href='/changelog' underline='never'>
                                 Changelog
                             </Anchor>
 
@@ -88,7 +94,7 @@ export const Footer = () => {
                         <Anchor size='sm' c={'#C9C9C9'} href='#' target='_blank' underline='never'>
                             Refund & Payment Policy
                         </Anchor>
-                        <Anchor size='sm' c={'#C9C9C9'} href='#' target='_blank' underline='never'>
+                        <Anchor size='sm' c={'#C9C9C9'} href='/support' underline='never'>
                             Raise an issue
                         </Anchor>
                     </Stack>
@@ -99,7 +105,7 @@ export const Footer = () => {
                 <Group align='center' py={20} gap={10} w={{ base: '90%', md: '70%' }} wrap='wrap' justify='space-between'>
                     <Group gap={30} justify='start'>
                         <Box h={50}>
-                            <Image src={'https://imiot.co.in/assets/images/footer/logo.png'} h={'100%'} w={'auto'} />
+                            <Image src={ImiotLogo} h={'100%'} w={'auto'} />
                         </Box>
                         <Anchor size='sm' c={'#C9C9C9'} href='https://www.imiot.co.in/' target='_blank' underline='never'>
                             About Imiot
@@ -108,7 +114,7 @@ export const Footer = () => {
                             Imiot Products Line-Up
                         </Anchor>
 
-                        <Anchor size='sm' c={'#C9C9C9'} href='/support'  underline='never'>
+                        <Anchor size='sm' c={'#C9C9C9'} href='/support' underline='never'>
                             Contact
                         </Anchor>
                     </Group>

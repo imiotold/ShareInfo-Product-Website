@@ -29,7 +29,7 @@ export const SectionThree = () => {
                 autoPlay
                 muted
               >
-                <source src={ved2} type='video/mp4' />
+                <source src={'https://res.cloudinary.com/dow8tfote/video/upload/f_auto:video,q_auto/puhm7rvv1pwku3al4ymg'} type='video/mp4' />
               </video>
             </Paper>
             <Title mt={20} c={'white'} style={{ fontFamily: 'Nunito' }} order={4}>
@@ -53,7 +53,7 @@ export const SectionThree = () => {
                 autoPlay
                 muted
               >
-                <source src={ved1} type='video/mp4' />
+                <source src={'https://res.cloudinary.com/dow8tfote/video/upload/f_auto:video,q_auto/lngyfm8aaix6ncsezpbv'} type='video/mp4' />
               </video>
             </Paper>
             <Title mt={20} c={'white'} style={{ fontFamily: 'Nunito' }} order={4}>

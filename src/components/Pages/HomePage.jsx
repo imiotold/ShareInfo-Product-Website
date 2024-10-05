@@ -79,7 +79,6 @@ export const HomePage = () => {
                     <div>
                         <Featured />
                     </div>
-
                     <div>
                         <SectionFive />
                     </div>

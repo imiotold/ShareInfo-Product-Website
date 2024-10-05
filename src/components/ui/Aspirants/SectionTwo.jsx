@@ -8,25 +8,25 @@ const cardData = [
         title: 'Students',
         description:
             <div>Fuel Your Tech Ambition: Your Path to Success Starts Here. Gain the skills, confidence, and connections you need to excel in tech with ShareInfo&#39;s comprehensive resources.</div>,
-        link: 'linkhere'
+        link: 'http://web.shareinfo.io/'
     },
     {
         title: 'Freshers',
         description:
             <div>Future tech leaders! Join us and unlock your potential. At ShareInfo, we&#39;re committed to nurturing the next generation of tech talent.</div>,
-        link: 'linkhere'
+        link: 'http://web.shareinfo.io/'
     },
     {
         title: 'Professionals',
         description:
             <div>Accelerate your journey to the top with ShareInfo. Our platform provides the resources, connections, and mentorship you need to excel in today&#39;s competitive tech landscape.</div>,
-        link: 'linkhere'
+        link: 'http://web.shareinfo.io/'
     },
     {
         title: 'Career Up-Scale',
         description:
             'Build a strong professional network: Connect with like-minded professionals and industry experts to expand your opportunities',
-        link: 'linkhere'
+        link: 'http://web.shareinfo.io/'
     }
 ];
 export const SectionTwo = () => {
@@ -57,7 +57,7 @@ export const SectionTwo = () => {
                                     {item.description}
                                 </Text>
                             </Box>
-                            <Button  onClick={() => handleClick('/learning')} rightSection={<IconExternalLink size={14} />} radius={'md'} color='black'>
+                            <Button  onClick={() => window.open('http://web.shareinfo.io/', '_blank')} rightSection={<IconExternalLink size={14} />} radius={'md'} color='black'>
                                 Get Started
                             </Button>
                         </Group>

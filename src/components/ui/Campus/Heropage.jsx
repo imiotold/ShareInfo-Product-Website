@@ -22,7 +22,7 @@ export const Heropage = () => {
                     Connect with top companies for campus placements. ShareInfo simplifies the process, making it easy to invite companies to your campus.
                     </Text>
                     <Group>
-                        <Button color='#631BE0' radius={'md'} variant='light'>
+                        <Button onClick={() => window.open('http://web.shareinfo.io/', '_blank')} color='#631BE0' radius={'md'} variant='light'>
                             Explore Resources
                         </Button>
 
