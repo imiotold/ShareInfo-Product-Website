@@ -20,33 +20,35 @@ import { Heropage } from '../ui/Learning/Heropage';
 export const Learning = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        AOS.init();
+        // AOS.init();
     }, []);
     return (
         <>
-            <Navbar active='learning' />
+            <div style={{ position: 'sticky', top: 0, zIndex: 9999999999 }}>
+                <Navbar active='learning' />
+            </div>
 
             <Flex align={'center'} justify={'center'}>
                 <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>
-                    <div data-aos='fade-up' data-aos-duration='3000'>
+                    <div>
                         <Heropage />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionOne />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionTwo />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Challenges />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Connections />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Internship />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionThree />
                     </div>
                     <div>
@@ -55,10 +57,10 @@ export const Learning = () => {
                     <div>
                         <OurRecruiters />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Community />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Featured />
                     </div>
 

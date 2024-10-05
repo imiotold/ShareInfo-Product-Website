@@ -100,7 +100,7 @@ const features = [
         title: 'Vision 2028',
         description: 'Leverage data to make informed decisions.',
         icon: <IconTargetArrow style={{ width: '70%', height: '70%' }} stroke={1.5} />,
-        link: '#'
+        link: '/vision28'
     },
     {
         title: 'Find Talent',

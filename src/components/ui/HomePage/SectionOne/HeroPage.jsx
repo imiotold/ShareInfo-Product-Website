@@ -14,7 +14,7 @@ const renderSubHeadingButton = (active) => {
         case 'learning':
             return <span>for Learning</span>;
         default:
-            return <span>New Method for Placements</span>;
+            return <span>Built for Placements</span>;
     }
 };
 
@@ -75,7 +75,7 @@ export const HeroPage = (props) => {
                         <span className='absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40' />
                     </button>
 
-                    <Title fw={600} size={isMobile ? '5rem' : '9rem'} className={classes.linearwipeVision}>
+                    <Title fw={700} size={isMobile ? '5rem' : '9rem'} style={{fontFamily: 'Nunito'}} className={classes.linearwipeVision}>
                         Vision 2028
                     </Title>
 

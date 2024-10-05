@@ -81,7 +81,7 @@ const feactData = [
         date: 'Aug 2024',
         news: 'AIN News',
         imageUrl:
-            'https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: 'ShareInfo: The Future of Talent Acquisition',
         description:
             'Our innovative platform is designed to streamline the hiring process, connect businesses with top talent, and foster meaningful connections between candidates and recruiters. With ShareInfo, you can experience the future of recruitment, where efficiency, effectiveness, and equity are paramount. '

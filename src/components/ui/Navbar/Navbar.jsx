@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper, ActionIcon } from '@mantine/core';
+import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper, ActionIcon, Divider } from '@mantine/core';
 import { IconExternalLink, IconX } from '@tabler/icons-react';
 import Logo from '../../../assets/ShareinfoNavLogo.svg';
 import classes from '../../../components/ui/style.module.css';

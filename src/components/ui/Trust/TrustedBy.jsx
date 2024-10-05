@@ -32,6 +32,14 @@ const companyLogos = [
         url: clg
     },
     {
+        name: 'collegeVM',
+        url: 'https://www.vjec.ac.in/public/img/logo/vjec-logo-white.svg'
+    },
+    {
+        name: 'kk',
+        url: 'https://keralakonnect.com/web/image/website/1/logo?unique=8a1db69'
+    },
+    {
         name: 'KEM',
         url: 'https://skills.knowledgemission.kerala.gov.in/theme/remui/pix/itrack_logo.png'
     },

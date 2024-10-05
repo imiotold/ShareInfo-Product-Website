@@ -11,38 +11,40 @@ import 'aos/dist/aos.css';
 import { Heropage } from '../ui/Employers/Heropage';
 import { OurRecruiters } from '../ui/Aspirants/OurRecruiters';
 
-
 export const Employers = () => {
     useEffect(() => {
-        AOS.init();
+        // AOS.init();
         window.scrollTo(0, 0);
     }, []);
     return (
         <>
-            <Navbar active='employers' />
-            {/* <div data-aos='fade-up' data-aos-duration='3000'>
+            <div style={{ position: 'sticky', top: 0, zIndex: 9999999999 }}>
+                <Navbar active='employers' />
+            </div>
+
+            {/* <div >
                 <HeroPage active='employers' />
             </div> */}
 
             <Flex align={'center'} justify={'center'}>
                 <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>
-                    <div data-aos='fade-up' data-aos-duration='3000'>
+                    <div>
                         <Heropage />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionOne />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <CaseStudies />
                     </div>
-                    <div >
-                        <OurRecruiters/>
+                    <div>
+                        <OurRecruiters />
                     </div>
 
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Featured />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionFive />
                     </div>
                 </Flex>

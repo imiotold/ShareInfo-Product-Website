@@ -16,37 +16,39 @@ import { Heropage } from '../ui/Aspirants/Heropage';
 export const Aspirants = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        AOS.init();
+        // AOS.init();
     }, []);
     return (
         <>
-            <Navbar active='aspirants' />
+            <div style={{ position: 'sticky', top: 0, zIndex: 9999999999 }}>
+                <Navbar active='aspirants' />
+            </div>
 
             <Flex align={'center'} justify={'center'}>
                 <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>
-                    <div data-aos='fade-up' data-aos-duration='3000'>
+                    <div>
                         {/* <HeroPage active='aspirants' /> */}
                         <Heropage />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionOne />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionTwo />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionThree />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <CaseStudies />
                     </div>
                     <div>
                         <OurRecruiters />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Featured />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionFive />
                     </div>
                 </Flex>

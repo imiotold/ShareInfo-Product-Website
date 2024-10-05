@@ -14,13 +14,19 @@ export const Vision2028 = () => {
 
     return (
         <>
-            <Navbar />
+            <div style={{ position: 'sticky', top: 0, zIndex: 9999999999 }}>
+                <Navbar />
+            </div>
+
             <Flex align={'center'} justify={'center'}>
                 <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>
                     <HeroPage vision='vision2028' />
                     <SectionOne />
                     <Featured />
+                    <div>
                     <SectionFive />
+
+                    </div>
                 </Flex>
             </Flex>
             <Footer />

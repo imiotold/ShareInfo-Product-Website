@@ -165,7 +165,7 @@ body::-webkit-scrollbar-button {
 }
 
 .CapableGrid .CapableCard {
-    cursor: grab;
+    cursor: pointer;
     transition: 0.7s ease;
 
     transform: scale(1);

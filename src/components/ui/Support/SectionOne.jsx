@@ -60,8 +60,8 @@ export const SectionOne = () => {
                 ))}
             </SimpleGrid>
 
-            <Stack align='center' justify='center' mt={50}>
-                <IconHours24 size={50} color='rgb(249, 70, 18)' stroke={2} />
+            <Stack align='center' justify='center' my={100}>
+                <IconHours24 size={50} color='gray' stroke={2} />
                 <Text c={'white'}>Our Support team is 24/7 Active</Text>
             </Stack>
         </div>
