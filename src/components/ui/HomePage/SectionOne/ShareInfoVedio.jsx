@@ -20,7 +20,7 @@ export const ShareInfoVedio = () => {
                                 width: '100%',
                                 height: '100%'
                             }}
-                            src='https://res.cloudinary.com/dow8tfote/video/upload/f_auto:video,q_auto/i6gsip4h5lwf8l1gb6jy'
+                            src='https://youtu.be/ALoLgtQwj0Y?si=EhTmKSMcODXXUhCa'
                             title='YouTube video player'
                             frameBorder='0'
                             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
