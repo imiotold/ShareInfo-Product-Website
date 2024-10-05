@@ -6,7 +6,7 @@ import { Flex } from '@mantine/core';
 export const ChangeLog = () => {
     return (
         <>
-         <div style={{position:'sticky', top:0}}>
+         <div style={{position:'sticky', top:0, zIndex: 2147483646}}>
               <Navbar />
          </div>
           

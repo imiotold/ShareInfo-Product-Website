@@ -50,8 +50,9 @@ export const Navbar = () => {
     return (
         <>
             <Flex
-                style={{zIndex:20}}
+                
                 className='navbar_component w-nav'
+                style={{zIndex:2147483646}}
                 align={'center'}
                 justify={'space-between'}
                 h={isMobile ? 60 : 80}
@@ -96,10 +97,10 @@ export const Navbar = () => {
                 </Button>
             </Flex>
 
-            <Drawer style={{zIndex:999999}} opened={drawerOpened} onClose={() => setDrawerOpened(false)} size='sm' withCloseButton={false}>
+            <Drawer style={{zIndex:2147483647}} opened={drawerOpened} onClose={() => setDrawerOpened(false)} size='sm' withCloseButton={false}>
                 <Paper>
                     <Group p={20} justify='space-between'>
-                        <Image
+                        {/* <Image
                             onClick={() => {
                                 navigate('/');
                                 localStorage.clear();
@@ -109,7 +110,7 @@ export const Navbar = () => {
                         />
                         <ActionIcon onClick={() => setDrawerOpened(false)} radius={'xl'} variant='default' size='md'>
                             <IconX />
-                        </ActionIcon>
+                        </ActionIcon> */}
                     </Group>
 
                     <Flex p={20} direction={'column'}>

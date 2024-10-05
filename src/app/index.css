@@ -140,7 +140,7 @@ body::-webkit-scrollbar-button {
 }
 
 .navbar_component {
-    z-index: 999999;
+    z-index: 2147483646;
     border-bottom: 1px none var(--border-color--border-primary);
     -webkit-backdrop-filter: blur(24px);
     backdrop-filter: blur(24px);

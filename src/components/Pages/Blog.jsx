@@ -7,7 +7,7 @@ import { SectionOne } from '../ui/Blog/SectionOne';
 export const Blog = () => {
     return (
         <div>
-             <div style={{position:'sticky', top:0}}>
+             <div style={{position:'sticky', top:0, zIndex: 2147483646}}>
                  <Navbar />
              </div>
            

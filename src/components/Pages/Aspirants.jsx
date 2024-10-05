@@ -20,7 +20,7 @@ export const Aspirants = () => {
     }, []);
     return (
         <>
-            <div style={{ position: 'sticky', top: 0 }}>
+            <div style={{ position: 'sticky', top: 0, zIndex: 2147483647 }}>
                 <Navbar active='aspirants' />
             </div>
 
