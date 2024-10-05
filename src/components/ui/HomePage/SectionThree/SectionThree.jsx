@@ -29,7 +29,7 @@ export const SectionThree = () => {
             icon: <IconChartArrowsVertical style={{ width: '70%', height: '70%' }} stroke={1.5} />
         },
         {
-            title: 'Diversity & Inclusion Commitment',
+            title: 'Inclusion Promise',
             description: 'We are committed to fostering diversity and inclusion.',
             icon: <IconUniverse style={{ width: '70%', height: '70%' }} stroke={1.5} />
         },

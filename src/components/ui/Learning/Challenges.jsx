@@ -60,7 +60,7 @@ const features = [
     },
     {
         title: 'Competition Mode',
-        description: 'Nailing it in all sorts of industry tests.',
+        description: 'Consistently achieving top scores on industry certifications.',
         icon: <IconSparkles style={{ width: '70%', height: '70%' }} stroke={1.5} />
     }
 ];

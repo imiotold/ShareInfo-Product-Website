@@ -15,7 +15,7 @@ const ProductCardData = [
     },
     {
         title: 'For Recruiters',
-        description: 'Seamlessly find top skilled aspirants to your team',
+        description: 'Find Top Skilled Aspirants to the Team',
         image: R,
         link: 'employers'
     },
