@@ -14,8 +14,8 @@ export const SectionThree = () => {
         </Title>
         <Text mb={40} ta={'center'}>State-of-the-art performance across a range of industry benchmarks. </Text>
 
-        <Flex direction={isMobile ? 'column' : 'row'} gap={50} justify={'center'}  wrap={'wrap'}>
-          <Flex  w={{ base: '80%', sm: '30%' }} direction={'column'}>
+        <Flex direction={isMobile ? 'column' : 'row'} gap={{base:'40', sm:'50'}} justify={'center'} align={'center'}  wrap={'wrap'}>
+          <Flex  w={{ base: '90%', sm: '30%' }} direction={'column'}>
           <Paper style={{ borderRadius: '28px' }} p={5} bg={'rgb(9, 12, 13)'}>
               <video
                 style={{
@@ -39,7 +39,7 @@ export const SectionThree = () => {
               Core Function: Manages campus placements, including student profiles, company requirements, and the matching process.
             </Text>
           </Flex>
-          <Flex mt={50} w={{ base: '80%', sm: '30%' }} direction={'column'}>
+          <Flex mt={{base:0, sm:80}} w={{ base: '90%', sm: '30%' }} direction={'column'}>
             <Paper  style={{ borderRadius: '28px' }} p={5} bg={'rgb(9, 12, 13)'}>
               <video
                 style={{

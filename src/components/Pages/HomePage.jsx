@@ -27,7 +27,7 @@ export const HomePage = () => {
     }, []);
     return (
         <>
-            <div style={{ position: 'sticky', top: 0, zIndex: 9999999999 }}>
+            <div style={{ position: 'sticky', top: 0 }}>
                 <Navbar />
             </div>
 
