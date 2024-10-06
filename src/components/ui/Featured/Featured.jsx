@@ -58,7 +58,7 @@ const feactData = [
         date: 'May 2024',
         news: 'AIN News',
         imageUrl:
-            'https://images.unsplash.com/photo-1570179538662-faa5e38e9d8f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: <div>Revolutionizing Recruitment: ShareInfo&#39;s Innovative Approach</div>,
         description: (
             <div>
@@ -81,7 +81,7 @@ const feactData = [
         date: 'Aug 2024',
         news: 'AIN News',
         imageUrl:
-            'https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1573496130407-57329f01f769?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: 'ShareInfo: The Future of Talent Acquisition',
         description:
             'Our innovative platform is designed to streamline the hiring process, connect businesses with top talent, and foster meaningful connections between candidates and recruiters. With ShareInfo, you can experience the future of recruitment, where efficiency, effectiveness, and equity are paramount. '

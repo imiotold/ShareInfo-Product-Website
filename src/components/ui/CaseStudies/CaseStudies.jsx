@@ -61,7 +61,7 @@ export const CaseStudies = () => {
                 size='lg'
                 radius={'md'}
                 color='#414ECA'
-                onClick={() => window.open('https://careers.imiot.co.in/', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('https://web.shareinfo.io/', '_blank', 'noopener,noreferrer')}
                 rightSection={<IconBow style={{ width: '70%', height: '70%' }} />}>
                 Start Your FREE Trial Now
             </Button>

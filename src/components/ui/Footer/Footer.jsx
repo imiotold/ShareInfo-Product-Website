@@ -140,7 +140,7 @@ export const Footer = () => {
                             <IconBrandLinkedin style={{ width: '70%', height: '70%' }} stroke={1.5} />
                         </ActionIcon>
                         <ActionIcon
-                            onClick={() => window.open('https://youtu.be/NZE0Pfs4c9A', '_blank')}
+                            onClick={() => window.open('https://www.youtube.com/@ImiotInc', '_blank')}
                             size={'lg'}
                             variant='transparent'
                             color='gray'
