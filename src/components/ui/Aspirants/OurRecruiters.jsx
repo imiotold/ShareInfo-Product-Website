@@ -25,14 +25,6 @@ export const OurRecruiters = () => {
 
 const companyLogos = [
     {
-        name: 'Confederation_of_Indian_Industry',
-        url: 'https://www.cii.in/images_new/cii-logoNew.png'
-    },
-    {
-        name: 'college',
-        url: clg
-    },
-    {
         name: 'KEM',
         url: 'https://skills.knowledgemission.kerala.gov.in/theme/remui/pix/itrack_logo.png'
     },
@@ -43,10 +35,6 @@ const companyLogos = [
     {
         name: 'vikram',
         url: 'https://www.vikramsolar.com/wp-content/uploads/2022/04/cropped-logo-1.png.webp'
-    },
-    {
-        name: 'mizone',
-        url: mizone
     },
 
     {
@@ -85,7 +73,7 @@ const companyLogos = [
         name: 'inexoft',
         url: inexoft
     },
-    
+
     {
         name: 'bni',
         url: bni

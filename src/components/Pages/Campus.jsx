@@ -15,11 +15,13 @@ import { Heropage } from '../ui/Campus/Heropage';
 export const Campus = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        AOS.init();
+        // AOS.init();
     }, []);
     return (
         <>
-            <Navbar active='campus' />
+            <div style={{ position: 'sticky', top: 0, zIndex: 2147483646 }}>
+                <Navbar active='campus' />
+            </div>
 
             {/* <div data-aos='fade-up' data-aos-duration='3000'>
                 <HeroPage active='campus' />
@@ -27,10 +29,10 @@ export const Campus = () => {
 
             <Flex align={'center'} justify={'center'}>
                 <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>
-                    <div data-aos='fade-up' data-aos-duration='3000'>
+                    <div>
                         <Heropage />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Flex justify={'center'}>
                             <Text size='lg' c={'blue'} w={{ base: '90%', md: '55%' }} ta={'center'}>
                                 Smart Matching: Recommends suitable candidates to companies based on skills, experience, and academic
@@ -39,11 +41,11 @@ export const Campus = () => {
                         </Flex>
                     </div>
 
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionOne />
                     </div>
 
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Flex justify={'center'}>
                             <Text size='lg' w={{ base: '90%', md: '55%' }} ta={'center'}>
                                 Smart Matching: Recommends suitable candidates to companies based on skills, experience, and academic
@@ -53,19 +55,19 @@ export const Campus = () => {
                         </Flex>
                     </div>
 
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionTwo />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionThree />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <CaseStudies />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <Featured />
                     </div>
-                    <div data-aos='fade-up' data-aos-duration='2000'>
+                    <div>
                         <SectionFive />
                     </div>
                 </Flex>

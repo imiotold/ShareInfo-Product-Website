@@ -30,9 +30,7 @@ export const WhyTheyTrust = () => {
                                 </Box>
                             </Stack>
 
-                            <Text mt={15} >
-                                {item.descrptioin}
-                            </Text>
+                            <Text mt={15}>{item.descrptioin}</Text>
                         </Paper>
                     </Flex>
                 ))}
@@ -44,8 +42,7 @@ export const WhyTheyTrust = () => {
 const vediioData = [
     {
         vedioUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-        avatarImagUrl:
-            'https://media.licdn.com/dms/image/D5603AQEcW1YeeROT8Q/profile-displayphoto-shrink_200_200/0/1718523927785?e=2147483647&v=beta&t=SYoOiUqotQU2GQ0qpUq487GOFy2Y0YtuVJdlnVHFQiI',
+        avatarImagUrl: 'https://res.cloudinary.com/dow8tfote/image/upload/v1728151044/mopbuywruoy8i4c1rvdj.jpg',
         name: 'Sreehari',
         designation: 'HR Vice President, Talrop',
         descrptioin:
@@ -53,8 +50,7 @@ const vediioData = [
     },
     {
         vedioUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-        avatarImagUrl:
-            'https://media.licdn.com/dms/image/D5603AQEcW1YeeROT8Q/profile-displayphoto-shrink_200_200/0/1718523927785?e=2147483647&v=beta&t=SYoOiUqotQU2GQ0qpUq487GOFy2Y0YtuVJdlnVHFQiI',
+        avatarImagUrl: 'https://res.cloudinary.com/dow8tfote/image/upload/v1728151044/ucoqslsyzjkxih3o5yls.jpg',
         name: 'Dr. Umesh P',
         designation: 'Placement Officer, CE-Thalassery',
         descrptioin:
@@ -62,8 +58,15 @@ const vediioData = [
     },
     {
         vedioUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-        avatarImagUrl:
-            'https://media.licdn.com/dms/image/D5603AQEcW1YeeROT8Q/profile-displayphoto-shrink_200_200/0/1718523927785?e=2147483647&v=beta&t=SYoOiUqotQU2GQ0qpUq487GOFy2Y0YtuVJdlnVHFQiI',
+        avatarImagUrl: '',
+        name: 'Adithyan',
+        designation: 'CEO Prospire Learning',
+        descrptioin:
+            "ShareInfo's analytics have provided invaluable insights into our hiring trends. We're now able to make data-driven decisions to improve our recruitment strategies."
+    },
+    {
+        vedioUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        avatarImagUrl: 'https://res.cloudinary.com/dow8tfote/image/upload/v1728151044/d81wsvenfew96pc1qwfd.jpg',
         name: 'Akshay',
         designation: 'Managing Partner, Prospire Learning',
         descrptioin:
@@ -71,22 +74,13 @@ const vediioData = [
     },
     {
         vedioUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-        avatarImagUrl:
-            'https://media.licdn.com/dms/image/D5603AQEcW1YeeROT8Q/profile-displayphoto-shrink_200_200/0/1718523927785?e=2147483647&v=beta&t=SYoOiUqotQU2GQ0qpUq487GOFy2Y0YtuVJdlnVHFQiI',
-        name: '---',
-        designation: '----',
+        avatarImagUrl: 'https://res.cloudinary.com/dow8tfote/image/upload/v1728151045/lmujgehdj0rd5vonstbo.jpg',
+        name: 'Vaishak Raveendran',
+        designation: 'Asst. Professor, CE-TLY',
         descrptioin:
             "Our students are thrilled with the personalized job recommendations from ShareInfo. It's helped them discover opportunities they never knew existed."
     },
-    {
-        vedioUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-        avatarImagUrl:
-            'https://media.licdn.com/dms/image/D5603AQEcW1YeeROT8Q/profile-displayphoto-shrink_200_200/0/1718523927785?e=2147483647&v=beta&t=SYoOiUqotQU2GQ0qpUq487GOFy2Y0YtuVJdlnVHFQiI',
-        name: 'Adithyan',
-        designation: 'CEO Prospire Learning',
-        descrptioin:
-            "ShareInfo's analytics have provided invaluable insights into our hiring trends. We're now able to make data-driven decisions to improve our recruitment strategies."
-    },
+
     {
         vedioUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
         avatarImagUrl:

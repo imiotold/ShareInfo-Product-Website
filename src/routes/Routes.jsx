@@ -9,6 +9,7 @@ import { Support } from '../components/Pages/Support';
 import { ChangeLog } from '../components/Pages/ChangeLog';
 import { Learning } from '../components/Pages/Learning';
 import { Blog } from '../components/Pages/Blog';
+import { Ai } from '../components/Pages/Ai';
 
 const HomePage = Loadable(lazy(() => import('../components/Pages/HomePage').then((module) => ({ default: module.HomePage }))));
 const Aspirants = Loadable(lazy(() => import('../components/Pages/Aspirants').then((module) => ({ default: module.Aspirants }))));
@@ -49,6 +50,10 @@ export const routes = [
     {
         path: 'blog',
         element: <Blog />
+    },
+    {
+        path: 'shareinfoai',
+        element: <Ai/>
     },
     {
         path: '*',

@@ -94,13 +94,13 @@ const features = [
         title: 'Imiot LearnSpace',
         description: 'Enjoy a smooth and efficient process from start to finish.',
         icon: <IconStarsFilled style={{ width: '70%', height: '70%' }} stroke={1.5} />,
-        link: '#'
+        link: '/learning'
     },
     {
         title: 'Vision 2028',
         description: 'Leverage data to make informed decisions.',
         icon: <IconTargetArrow style={{ width: '70%', height: '70%' }} stroke={1.5} />,
-        link: '#'
+        link: '/vision28'
     },
     {
         title: 'Find Talent',
@@ -112,6 +112,6 @@ const features = [
         title: 'ShareInfo AI',
         description: 'The Future of Job Hunting Find your dream job faster with tailored opportunities.',
         icon: <IconBrain style={{ width: '70%', height: '70%' }} stroke={1.5} />,
-        link: '#'
+        link: '/shareinfoai'
     }
 ];

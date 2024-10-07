@@ -61,7 +61,7 @@ export const CaseStudies = () => {
                 size='lg'
                 radius={'md'}
                 color='#414ECA'
-                onClick={() => window.open('https://careers.imiot.co.in/', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('https://web.shareinfo.io/', '_blank', 'noopener,noreferrer')}
                 rightSection={<IconBow style={{ width: '70%', height: '70%' }} />}>
                 Start Your FREE Trial Now
             </Button>
@@ -78,8 +78,7 @@ const paperWithButtonData = [
     },
     {
         title: 'Actionable Insights',
-        description:
-            'A Collaborative Approach to Bridge the Gap Between Theoretical Knowledge and Practical Application',
+        description: 'A Collaborative Approach to Bridge the Gap Between Theoretical Knowledge and Practical Application',
         icon: <IconActivity style={{ width: rem(16), height: rem(16) }} />,
         color: 'blue'
     }
@@ -90,12 +89,12 @@ const caseStudyData = [
         date: 'May 23',
         description: 'Real-World Learning for Industry Success',
         imageUrl:
-            'https://images.unsplash.com/photo-1687463221023-02f259da7d77?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         date: 'June 10',
         description: 'Industry-Academia Collaboration',
         imageUrl:
-            'https://images.unsplash.com/photo-1687463221020-b8769b32c622?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }
 ];

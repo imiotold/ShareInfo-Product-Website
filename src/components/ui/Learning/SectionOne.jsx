@@ -38,7 +38,7 @@ export const SectionOne = () => {
             </SimpleGrid>
 
             <Group mt={20} justify='center'>
-                <Button color='#F94612' radius='md'>
+                <Button onClick={() => window.open('http://web.shareinfo.io/', '_blank')} color='#F94612' radius='md'>
                     Explore Top Learning Resources to Crack the Top Tech Career
                 </Button>
             </Group>

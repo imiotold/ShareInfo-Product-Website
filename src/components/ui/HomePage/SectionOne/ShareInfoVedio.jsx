@@ -3,12 +3,12 @@ import { Paper, Title, Text } from '@mantine/core';
 export const ShareInfoVedio = () => {
     return (
         <>
-            <div>
-                <Title c={'white'} className='text-custom_gradient_blue' style={{ fontFamily: 'Nunito' }} order={1} align={'center'}>
+            <div id='explore' >
+                <Title mt={50} c={'white'} className='text-custom_gradient_blue' style={{ fontFamily: 'Nunito' }} order={1} align={'center'}>
                     1% starts with ShareInfo
                 </Title>
                 <Text ta={'center'}>Bridge Your Ambition and Drive into Success! </Text>
-                <Paper bg={'#0C0C0C'} p={10} style={{ borderRadius: '30px' }} mt={20} shadow='lg'>
+                <Paper mt={50} bg={'#0C0C0C'} p={10} style={{ borderRadius: '30px' }}  shadow='lg'>
                     <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                         <iframe
                             
@@ -20,7 +20,7 @@ export const ShareInfoVedio = () => {
                                 width: '100%',
                                 height: '100%'
                             }}
-                            src='https://www.youtube.com/embed/NZE0Pfs4c9A?si=NLUqdHqu9Hvz9LnR'
+                            src='https://www.youtube.com/embed/ALoLgtQwj0Y?si=hNC5iOs75Uu-nsaN'
                             title='YouTube video player'
                             frameBorder='0'
                             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'

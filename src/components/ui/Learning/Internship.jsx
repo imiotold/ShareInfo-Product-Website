@@ -39,7 +39,7 @@ export const Internship = () => {
             </SimpleGrid>
 
             <Group mt={20} justify='center'>
-                <Button color='#F94612' radius='md'>
+                <Button onClick={() => window.open('http://web.shareinfo.io/', '_blank')} color='#F94612' radius='md'>
                     Find Top Paid Internships from ShareInfo Jobs
                 </Button>
             </Group>

@@ -1,7 +1,10 @@
 import { Paper, Title, Text, Box, Group, Button, Flex, ActionIcon } from '@mantine/core';
 import { IconExternalLink, IconTargetArrow } from '@tabler/icons-react';
 import vedio from '../../../../assets/video/mission.mp4'
+import { useNavigate } from 'react-router-dom';
 export const MisiionShareInfo = () => {
+
+    const navigate = useNavigate();
     return (
         <>
             <Flex direction={'column'} align={'center'} justify={'center'}>
@@ -35,6 +38,7 @@ export const MisiionShareInfo = () => {
                             size='md'
                             radius={'md'}
                             color='#414ECA'
+                            onClick={() => navigate('vision28')}
                             rightSection={<IconExternalLink style={{ width: '70%', height: '70%' }} />}>
                             Explore More About us
                         </Button>
