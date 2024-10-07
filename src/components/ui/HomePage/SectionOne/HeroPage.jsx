@@ -59,7 +59,7 @@ export const HeroPage = (props) => {
                         w={{ base: '120PX', sm: '150px' }}
                     />
 
-                    <Image draggable={false} style={{ pointerEvents: 'none' }} mt={60} src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316318/c1uxtn5ww27bi3dcy2t9.svg'} w={{ base: '70%', sm: '20%' }} />
+                    <Image draggable={false} style={{ pointerEvents: 'none' }} mt={60} src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728317594/s9jmlmjzxack0ugsesje.png'} w={{ base: '70%', sm: '20%' }} />
                 </Flex>
             </BackgroundImage>
         :   <>
