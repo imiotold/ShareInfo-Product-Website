@@ -1,5 +1,4 @@
 import { Button, Flex, Group, Image, Stack, Text, Title } from '@mantine/core';
-import heroAspirants from '../../../assets/ProductLogo/HeroRecruiter.png';
 
 export const Heropage = () => {
     return (
@@ -37,7 +36,10 @@ export const Heropage = () => {
                     </Group>
                 </Stack>
                 <Flex align={'center'} justify={'center'} w={{ base: '90%', md: '50%' }}>
-                    <Image src={heroAspirants} w={'auto'} />
+                    <Image
+                        src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728315079/productlogos/g5gmm92vgzilsxgowzjs.png'}
+                        w={'auto'}
+                    />
                 </Flex>
             </Flex>
         </Flex>

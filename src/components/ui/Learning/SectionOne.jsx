@@ -19,8 +19,8 @@ export const SectionOne = () => {
                 cols={{ base: 1, sm: 2, lg: 4 }}
                 spacing={{ base: 10, sm: 10 }}
                 verticalSpacing={{ base: 10, sm: 10 }}>
-                {features.map((feature, index) => (
-                    <Paper bg={'#090C0D'} key={index} className='CapableCard' radius={'lg'} w='100%'>
+                {features.map((feature) => (
+                    <Paper bg={'#090C0D'} key={feature.title} className='CapableCard' radius={'lg'} w='100%'>
                         <Flex p={30} direction={'column'} align={{ base: 'center', sm: 'start' }}>
                             <ActionIcon variant='light' color={'orange'} size='xl' radius='md' aria-label='Settings'>
                                 {feature.icon}

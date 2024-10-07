@@ -35,8 +35,8 @@ export const SectionOne = () => {
             </Title>
             <Text>New Updates & Improvements to ShareInfo</Text>
             <Stack mt={50}>
-                {changelogData.map((entry, index) => (
-                    <Card bg={'#090C0D'} key={index} padding='lg' radius='md'>
+                {changelogData.map((entry) => (
+                    <Card bg={'#090C0D'} key={entry.version} padding='lg' radius='md'>
                         <Title order={3}>
                             Version {entry.version} - <Text component='span'>{entry.date}</Text>
                         </Title>

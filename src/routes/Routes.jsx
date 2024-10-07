@@ -2,17 +2,17 @@ import { lazy } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { NotFound } from '../components/Pages/NotFound';
 import Loadable from './Loadable';
-import { Campus } from '../components/Pages/Campus';
-import { Employers } from '../components/Pages/Employers';
-import { Vision2028 } from '../components/Pages/Vision2028';
-import { Support } from '../components/Pages/Support';
-import { ChangeLog } from '../components/Pages/ChangeLog';
-import { Learning } from '../components/Pages/Learning';
-import { Blog } from '../components/Pages/Blog';
-import { Ai } from '../components/Pages/Ai';
 
 const HomePage = Loadable(lazy(() => import('../components/Pages/HomePage').then((module) => ({ default: module.HomePage }))));
 const Aspirants = Loadable(lazy(() => import('../components/Pages/Aspirants').then((module) => ({ default: module.Aspirants }))));
+const Campus = Loadable(lazy(() => import('../components/Pages/Campus').then((module) => ({ default: module.Campus }))));
+const Employers = Loadable(lazy(() => import('../components/Pages/Employers').then((module) => ({ default: module.Employers }))));
+const Vision2028 = Loadable(lazy(() => import('../components/Pages/Vision2028').then((module) => ({ default: module.Vision2028 }))));
+const Support = Loadable(lazy(() => import('../components/Pages/Support').then((module) => ({ default: module.Support }))));
+const ChangeLog = Loadable(lazy(() => import('../components/Pages/ChangeLog').then((module) => ({ default: module.ChangeLog }))));
+const Learning = Loadable(lazy(() => import('../components/Pages/Learning').then((module) => ({ default: module.Learning }))));
+const Blog = Loadable(lazy(() => import('../components/Pages/Blog').then((module) => ({ default: module.Blog }))));
+const Ai = Loadable(lazy(() => import('../components/Pages/Ai').then((module) => ({ default: module.Ai }))));
 
 export const routes = [
     {

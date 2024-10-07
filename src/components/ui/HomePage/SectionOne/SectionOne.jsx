@@ -1,6 +1,5 @@
 import { Flex, Button, Text, Title, Image } from '@mantine/core';
 import { IconExternalLink } from '@tabler/icons-react';
-import FourPiller from '../../../../assets/FourPiller.svg';
 
 export const SectionOne = () => {
     return (
@@ -11,7 +10,11 @@ export const SectionOne = () => {
                 </Title>
                 <Text ta={'center'}>We are integrating 4 pillers of Success</Text>
 
-                <Image w={{ base: '90%', md: '70%' }} className='no-select no-context-menu' src={FourPiller} />
+                <Image
+                    w={{ base: '90%', md: '70%' }}
+                    className='no-select no-context-menu'
+                    src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728320812/yan1gv6drna3ipjgctbs.png'}
+                />
 
                 <Button
                     onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank', 'noopener,noreferrer')}

@@ -17,35 +17,33 @@ export const CaseStudies = () => {
             </Flex>
             <Flex mt={20} gap={10} justify={isMobile ? 'center' : 'space-between'} align={'center'} direction={isMobile ? 'column' : 'row'}>
                 {caseStudyData.map((item, index) => (
-                    <>
-                        <Flex w={'100%'} direction={'column'}>
-                            <Box w={'100%'} h={150}>
-                                <Image fit='cover' style={{ borderRadius: '15px 15px 0px 0px' }} h={'100%'} src={item.imageUrl} />
-                            </Box>
+                    <Flex key={item.date} w={'100%'} direction={'column'}>
+                        <Box w={'100%'} h={150}>
+                            <Image fit='cover' style={{ borderRadius: '15px 15px 0px 0px' }} h={'100%'} src={item.imageUrl} />
+                        </Box>
 
-                            <Paper
-                                key={index}
-                                w={'100%'}
-                                h={'100%'}
-                                bg={'#090C0D'}
-                                p={25}
-                                style={{ borderRadius: '0px 0px 15px 15px' }}
-                                shadow='lg'>
-                                <Stack align='start' flex={1} gap={3}>
-                                    <Text c={'dimmed'} size='sm'>
-                                        {item.date}
-                                    </Text>
-                                    <Text>{item.description}</Text>
-                                </Stack>
-                            </Paper>
-                        </Flex>
-                    </>
+                        <Paper
+                            key={index}
+                            w={'100%'}
+                            h={'100%'}
+                            bg={'#090C0D'}
+                            p={25}
+                            style={{ borderRadius: '0px 0px 15px 15px' }}
+                            shadow='lg'>
+                            <Stack align='start' flex={1} gap={3}>
+                                <Text c={'dimmed'} size='sm'>
+                                    {item.date}
+                                </Text>
+                                <Text>{item.description}</Text>
+                            </Stack>
+                        </Paper>
+                    </Flex>
                 ))}
             </Flex>
 
             <Flex mt={10} gap={10} justify={isMobile ? 'center' : 'space-between'} align={'center'} direction={isMobile ? 'column' : 'row'}>
-                {paperWithButtonData.map((item, index) => (
-                    <Paper key={index} w={'100%'} bg={'#090C0D'} p={25} style={{ borderRadius: '15px' }} shadow='lg'>
+                {paperWithButtonData.map((item) => (
+                    <Paper key={item.title} w={'100%'} bg={'#090C0D'} p={25} style={{ borderRadius: '15px' }} shadow='lg'>
                         <Stack>
                             <Badge radius={'md'} leftSection={item.icon} size='lg' variant='light' color={item.color}>
                                 {item.title}

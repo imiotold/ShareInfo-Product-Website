@@ -1,34 +1,30 @@
 import { Flex, Text, Title, SimpleGrid, Paper, Image, Box, ActionIcon } from '@mantine/core';
 import { IconChevronRight } from '@tabler/icons-react';
-import A from '../../../../assets/ProductLogo/ShareInfoForAspirants.svg';
-import R from '../../../../assets/ProductLogo/ShareInfoForRecruiters.svg';
-import C from '../../../../assets/ProductLogo/ShareInfoForCampus.svg';
-import M from '../../../../assets/ProductLogo/ShareInfoForMentors.svg';
 import { useNavigate } from 'react-router-dom';
 
 const ProductCardData = [
     {
         title: 'For Aspirants',
         description: 'To Create the Top 1% Tech Enthusiasts',
-        image: A,
+        image: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/productlogos/pgsphsslux8haykwsw4l',
         link: 'aspirants'
     },
     {
         title: 'For Recruiters',
         description: 'Find Top Skilled Aspirants to the Team',
-        image: R,
+        image: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/productlogos/zh4hrjpk2ae44d3fhoeh',
         link: 'employers'
     },
     {
         title: 'For Campus',
         description: 'Vision to Create 1% Skill inside Campus',
-        image: C,
+        image: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/productlogos/uepxs7n64dsvkqseqpl4',
         link: 'campus'
     },
     {
         title: 'For Mentors',
         description: 'Guiding the passioned people to become 1%',
-        image: M,
+        image: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/productlogos/haohfuppxhu7ycptmz1y',
         link: 'learning'
     }
 ];
@@ -57,10 +53,10 @@ export const SectionTwo = () => {
                 cols={{ base: 1, xs: 2, md: 4 }}
                 spacing={{ base: 'md', sm: 'xl' }}
                 verticalSpacing={{ base: 'md', sm: 'xl' }}>
-                {ProductCardData.map((item, index) => (
+                {ProductCardData.map((item) => (
                     <Paper
                         onClick={() => handleClick(item.link)}
-                        key={index}
+                        key={item.title}
                         className='ProductCard'
                         bg={'#090C0D'}
                         p={30}

@@ -13,8 +13,8 @@ export const TechCore = () => {
             </Flex>
 
             <SimpleGrid mt={40} cols={{ base: 3, sm: 6 }} spacing={{ base: 'md', sm: 'md' }} verticalSpacing={{ base: 'md', sm: 'md' }}>
-                {technologyLogos.map((item, index) => (
-                    <Flex key={index} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
+                {technologyLogos.map((item) => (
+                    <Flex key={item.name} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
                         <Image fit={'contain'} w={'auto'} h={100} src={item.url} alt={item.name} />
                     </Flex>
                 ))}

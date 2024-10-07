@@ -1,8 +1,4 @@
 import { Flex, SimpleGrid, Text, Image } from '@mantine/core';
-import cadd from '../../../assets/companylogos/cadd.svg';
-import inexoft from '../../../assets/companylogos/inexoft.svg';
-import bni from '../../../assets/companylogos/bni.svg';
-import prospire from '../../../assets/companylogos/prospire.svg';
 
 export const OurRecruiters = () => {
     return (
@@ -10,8 +6,8 @@ export const OurRecruiters = () => {
             <Text ta={'center'}>T O P&nbsp;&nbsp;R E C R U I T E R S</Text>
 
             <SimpleGrid mt={40} cols={{ base: 3, sm: 5 }} spacing={{ base: 'md', sm: 'md' }} verticalSpacing={{ base: 'md', sm: 'md' }}>
-                {companyLogos.map((item, index) => (
-                    <Flex key={index} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
+                {companyLogos.map((item) => (
+                    <Flex key={item.name} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
                         <Image fit={'contain'} w={'auto'} h={100} src={item.url} alt={item.name} />
                     </Flex>
                 ))}
@@ -68,16 +64,16 @@ const companyLogos = [
 
     {
         name: 'inexoft',
-        url: inexoft
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/usgitsntt13qyjw9ynna'
     },
 
     {
         name: 'bni',
-        url: bni
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/srta06mpyoqoxnilnjrw'
     },
     {
         name: 'cadd',
-        url: cadd
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/owjkcbt2wgzyg22ofdn3'
     },
     {
         name: 'daeseung',
@@ -85,6 +81,6 @@ const companyLogos = [
     },
     {
         name: 'prospire',
-        url: prospire
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/dxvu8pc2kvtmaiaovjqi'
     }
 ];

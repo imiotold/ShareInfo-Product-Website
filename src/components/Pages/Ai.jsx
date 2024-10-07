@@ -2,11 +2,6 @@ import { Flex, Image, Text } from '@mantine/core';
 import { Navbar } from '../ui/Navbar/Navbar';
 import { useMediaQuery } from '@mantine/hooks';
 
-import grid from '../../assets/ai/grid.svg';
-import comingsoon from '../../assets/ai/comingsoon.svg';
-import ai from '../../assets/ai/shareinfoai.svg';
-import aiprocessor from '../../assets/ai/Processor.svg';
-
 export const Ai = () => {
     const isMobile = useMediaQuery('(max-width: 768px)');
 
@@ -17,17 +12,38 @@ export const Ai = () => {
                     <Navbar />
                 </div>
 
-                <Image zIndex={10} draggable={false} w={{ base: '60%', sm: '25%' }} src={ai} />
+                <Image
+                    zIndex={10}
+                    draggable={false}
+                    w={{ base: '60%', sm: '25%' }}
+                    src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316011/AI/n36dh6px2qeiry8ducjm.svg'}
+                />
 
                 {isMobile ?
-                    <Image zIndex={10} draggable={false} w={{ base: '50%', sm: '50%' }} src={aiprocessor} />
-                :   <Image zIndex={10} draggable={false} w={{ base: '90%', sm: '50%' }} src={grid} />}
+                    <Image
+                        zIndex={10}
+                        draggable={false}
+                        w={{ base: '50%', sm: '50%' }}
+                        src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316103/AI/dpac4cppxogmiglyj9le.svg'}
+                    />
+                :   <Image
+                        zIndex={10}
+                        draggable={false}
+                        w={{ base: '90%', sm: '50%' }}
+                        src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316136/AI/qvsndet3qqryvnjko3kr.svg'}
+                    />
+                }
 
                 <Text ta={'center'} size={isMobile && 'sm'} w={isMobile && '70%'} c={'dimmed'}>
                     we’re working on it we will let you know once it ready for action
                 </Text>
 
-                <Image draggable={false} style={{ pointerEvents: 'none' }} src={comingsoon} w={'70%'} />
+                <Image
+                    draggable={false}
+                    style={{ pointerEvents: 'none' }}
+                    src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316004/AI/fzjlcxkvfpxzuiflhjen.svg'}
+                    w={'70%'}
+                />
             </Flex>
         </div>
     );

@@ -14,8 +14,8 @@ export const WhyTheyTrust = () => {
             </Flex>
 
             <SimpleGrid mt={40} cols={{ base: 1, md: 3 }} spacing={{ base: 'md', sm: 'md' }} verticalSpacing={{ base: 'md', sm: 'md' }}>
-                {vediioData.map((item, index) => (
-                    <Flex h={'100%'} key={index} direction={'column'} justify={'center'} align={'center'}>
+                {vediioData.map((item) => (
+                    <Flex h={'100%'} key={item.name} direction={'column'} justify={'center'} align={'center'}>
                         {/* <video style={{ borderRadius: '18px 18px 0px 0px' }} autoPlay muted>
                             <source src={item.vedioUrl} type='video/mp4' />
                         </video> */}

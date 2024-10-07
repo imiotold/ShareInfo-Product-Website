@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Navbar } from '../ui/Navbar/Navbar';
 import { Footer } from '../ui/Footer/Footer';
 import { HeroPage } from '../ui/HomePage/SectionOne/HeroPage';
@@ -8,7 +7,6 @@ import { SectionThree } from '../ui/HomePage/SectionThree/SectionThree';
 import { SectionFour } from '../ui/HomePage/SectionFour/SectionFour';
 import { SectionFive } from '../ui/HomePage/SectionFive/SectionFive';
 import { Flex } from '@mantine/core';
-import { ShareInfoVedio } from '../ui/HomePage/SectionOne/ShareInfoVedio';
 import { MissionBanner } from '../ui/HomePage/SectionTwo/MissionBanner';
 import { ForLearn } from '../ui/HomePage/SectionFour/ForLearn';
 import { CaseStudies } from '../ui/CaseStudies/CaseStudies';
@@ -19,9 +17,6 @@ import { TechCore } from '../ui/TechCore/TechCore';
 import { Featured } from '../ui/Featured/Featured';
 
 export const HomePage = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
     return (
         <>
             <div style={{ position: 'sticky', top: 0, zIndex: 2147483646 }}>
@@ -31,11 +26,11 @@ export const HomePage = () => {
                 <HeroPage />
             </div>
 
-            <Flex align={'center'} justify={'center'}>
+            <Flex mt={{ base: 50, sm: 150 }} align={'center'} justify={'center'}>
                 <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>
-                    <div>
+                    {/* <div>
                         <ShareInfoVedio />
-                    </div>
+                    </div> */}
                     <div>
                         <SectionOne />
                     </div>
