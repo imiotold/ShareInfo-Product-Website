@@ -5,63 +5,63 @@ import { useMediaQuery } from '@mantine/hooks';
 export const SectionFour = () => {
     const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
-    const visionData = [
-        {
-            year: '2025',
+    // const visionData = [
+    //     {
+    //         year: '2025',
 
-            color: 'yellow',
-            listdata: [
-                'Global Talent Pool',
-                'Unwavering Support',
-                'Affordable & Scalable',
-                'Diversity & Inclusion Commitment',
-                'Streamlined Process',
-                'Data-driven Insights',
-                'AI-powered Matching',
-                'Continuous Improvement',
-                'Personalized Candidate Experience',
-                'Performance Prediction',
-                'Employer Branding Optimization',
-                'Collaborative Hiring'
-            ]
-        },
-        {
-            year: '2028',
-            color: 'orange',
-            listdata: [
-                'Global Talent Pool',
-                'Unwavering Support',
-                'Affordable & Scalable',
-                'Diversity & Inclusion Commitment',
-                'Streamlined Process',
-                'Data-driven Insights',
-                'AI-powered Matching',
-                'Continuous Improvement',
-                'Personalized Candidate Experience',
-                'Performance Prediction',
-                'Employer Branding Optimization',
-                'Collaborative Hiring'
-            ]
-        },
-        {
-            year: '2030',
-            color: 'blue',
-            listdata: [
-                'Global Talent Pool',
-                'Unwavering Support',
-                'Affordable & Scalable',
-                'Diversity & Inclusion Commitment',
-                'Streamlined Process',
-                'Data-driven Insights',
-                'AI-powered Matching',
-                'Continuous Improvement',
-                'Personalized Candidate Experience',
-                'Performance Prediction',
-                'Employer Branding Optimization',
-                'Collaborative Hiring'
-            ]
-        }
-    ];
+    //         color: 'yellow',
+    //         listdata: [
+    //             'Global Talent Pool',
+    //             'Unwavering Support',
+    //             'Affordable & Scalable',
+    //             'Diversity & Inclusion Commitment',
+    //             'Streamlined Process',
+    //             'Data-driven Insights',
+    //             'AI-powered Matching',
+    //             'Continuous Improvement',
+    //             'Personalized Candidate Experience',
+    //             'Performance Prediction',
+    //             'Employer Branding Optimization',
+    //             'Collaborative Hiring'
+    //         ]
+    //     },
+    //     {
+    //         year: '2028',
+    //         color: 'orange',
+    //         listdata: [
+    //             'Global Talent Pool',
+    //             'Unwavering Support',
+    //             'Affordable & Scalable',
+    //             'Diversity & Inclusion Commitment',
+    //             'Streamlined Process',
+    //             'Data-driven Insights',
+    //             'AI-powered Matching',
+    //             'Continuous Improvement',
+    //             'Personalized Candidate Experience',
+    //             'Performance Prediction',
+    //             'Employer Branding Optimization',
+    //             'Collaborative Hiring'
+    //         ]
+    //     },
+    //     {
+    //         year: '2030',
+    //         color: 'blue',
+    //         listdata: [
+    //             'Global Talent Pool',
+    //             'Unwavering Support',
+    //             'Affordable & Scalable',
+    //             'Diversity & Inclusion Commitment',
+    //             'Streamlined Process',
+    //             'Data-driven Insights',
+    //             'AI-powered Matching',
+    //             'Continuous Improvement',
+    //             'Personalized Candidate Experience',
+    //             'Performance Prediction',
+    //             'Employer Branding Optimization',
+    //             'Collaborative Hiring'
+    //         ]
+    //     }
+    // ];
 
     return (
         <>

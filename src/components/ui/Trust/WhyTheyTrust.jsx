@@ -1,4 +1,4 @@
-import { Flex, Text, Title, SimpleGrid, Group, Paper, Box, Avatar, Stack } from '@mantine/core';
+import { Flex, Text, Title, SimpleGrid, Paper, Box, Avatar, Stack } from '@mantine/core';
 
 export const WhyTheyTrust = () => {
     return (

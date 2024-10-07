@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import vedio from '../../../../assets/video/Learn.mp4'
 
 export const ForLearn = () => {
-    const navigate = useNavigate();
+   
 
     return (
         <>

@@ -1,4 +1,4 @@
-import { Flex, Text, em, Title, Stack, Group, Button, BackgroundImage, Image } from '@mantine/core';
+import { Flex, Text, em, Title, BackgroundImage, Image } from '@mantine/core';
 import classes from '../../style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
 import FluidWall from '../../../../assets/background.svg';
@@ -6,40 +6,6 @@ import badgelanding from '../../../../assets/badge.svg';
 import buttonlanding from '../../../../assets/button.svg';
 import iconslanding from '../../../../assets/iconslanding.svg';
 
-const renderSubHeadingButton = (active) => {
-    switch (active) {
-        case 'aspirants':
-            return <span>for Aspirants</span>;
-        case 'campus':
-            return <span>for Campus</span>;
-        case 'employers':
-            return <span>for Recruiters</span>;
-        case 'learning':
-            return <span>for Learning</span>;
-        default:
-            return <span>Built for Placements</span>;
-    }
-};
-
-const description = (active) => {
-    switch (active) {
-        case 'aspirants':
-            return <>Building Tech Aspirants to Dream Higher</>;
-        case 'campus':
-            return <>Our Campus Suit for Placements and Skill Up Packages</>;
-        case 'employers':
-            return <>Our Recruiter Suit to find the Best Talent Pool to your team</>;
-        case 'learning':
-            return <>Our Learning Suit for Students and Educators</>;
-        default:
-            return (
-                <>
-                    ShareInfo is built to bridge the gap between Aspirants, <br /> Institutes, and Recruiters Shaping the future of tech
-                    enthusiasts
-                </>
-            );
-    }
-};
 
 const handleHash = (sectionId) => {
     const section = document.getElementById(sectionId);

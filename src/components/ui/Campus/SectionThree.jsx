@@ -1,7 +1,6 @@
 import { Flex, Title, Text, Paper } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import ved1 from '../../../assets/video/one.mp4';
-import ved2 from '../../../assets/video/two.mp4';
+
 
 export const SectionThree = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');

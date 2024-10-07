@@ -8,15 +8,13 @@ import { Featured } from '../ui/Featured/Featured';
 import { Footer } from '../ui/Footer/Footer';
 import { Navbar } from '../ui/Navbar/Navbar';
 import { SectionFive } from '../ui/HomePage/SectionFive/SectionFive';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Flex } from '@mantine/core';
 import { Heropage } from '../ui/Aspirants/Heropage';
 
 export const Aspirants = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        // AOS.init();
+      
     }, []);
     return (
         <>

@@ -1,8 +1,7 @@
 import { Flex, Stack, Text, Group, Badge, Box, Image, Divider, Anchor, ActionIcon } from '@mantine/core';
 import ImiotLogo from '../../../assets/Imiot.png';
 import ShareInfoLogo from '../../../assets/ShareinfoNavLogo.svg';
-import { IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconBrandYoutube } from '@tabler/icons-react';
-// import FluidWall from '../../../assets/fluu.png';
+import { IconBrandInstagram, IconBrandLinkedin, IconBrandYoutube } from '@tabler/icons-react';
 
 export const Footer = () => {
     return (

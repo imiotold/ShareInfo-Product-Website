@@ -8,14 +8,11 @@ import { SectionTwo } from '../ui/Campus/SectionTwo';
 import { SectionThree } from '../ui/Campus/SectionThree';
 import { CaseStudies } from '../ui/CaseStudies/CaseStudies';
 import { Featured } from '../ui/Featured/Featured';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Heropage } from '../ui/Campus/Heropage';
 
 export const Campus = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        // AOS.init();
     }, []);
     return (
         <>

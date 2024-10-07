@@ -8,6 +8,7 @@ module.exports = {
 
     plugins: ['react-refresh'],
     rules: {
+        'react/no-unescaped-entities': 'off',
         'react/jsx-no-target-blank': 'off',
         'react/prop-types': 0,
         'react-refresh/only-export-components': 'off'

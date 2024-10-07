@@ -1,6 +1,5 @@
 import { Text, Title, Flex, Card, Group, Button, Box } from '@mantine/core';
 import { IconExternalLink } from '@tabler/icons-react';
-import { useNavigate } from 'react-router-dom';
 
 
 const cardData = [
@@ -31,11 +30,8 @@ const cardData = [
 ];
 export const SectionTwo = () => {
 
-    const navigate = useNavigate();
 
-    const handleClick = (link) => {
-        navigate(`${link}`);
-    }
+   
 
     return (
         <>

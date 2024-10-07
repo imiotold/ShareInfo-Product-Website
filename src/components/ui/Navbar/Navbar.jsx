@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper, ActionIcon, Divider } from '@mantine/core';
-import { IconExternalLink, IconX } from '@tabler/icons-react';
+import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper } from '@mantine/core';
+import { IconExternalLink } from '@tabler/icons-react';
 import Logo from '../../../assets/ShareinfoNavLogo.svg';
 import classes from '../../../components/ui/style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
