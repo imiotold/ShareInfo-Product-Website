@@ -30,10 +30,10 @@ export const HomePage = () => {
             <div style={{ position: 'sticky', top: 0, zIndex: 2147483646 }}>
                 <Navbar />
             </div>
-
             <div>
                 <HeroPage />
             </div>
+          
             {/* <FloatingNavDemo /> */}
 
             <Flex align={'center'} justify={'center'}>

@@ -112,6 +112,6 @@ const features = [
         title: 'ShareInfo AI',
         description: 'The Future of Job Hunting Find your dream job faster with tailored opportunities.',
         icon: <IconBrain style={{ width: '70%', height: '70%' }} stroke={1.5} />,
-        link: '#'
+        link: '/shareinfoai'
     }
 ];
