@@ -1,12 +1,10 @@
 import { Flex, Text, em, Title, Stack, Group, Button, BackgroundImage, Image } from '@mantine/core';
 import classes from '../../style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
-import FluidWall from '../../../../assets/fluu.png';
-import background from '../../../../assets/background.svg';
+import FluidWall from '../../../../assets/background.svg';
 import badgelanding from '../../../../assets/badge.svg';
 import buttonlanding from '../../../../assets/button.svg';
 import iconslanding from '../../../../assets/iconslanding.svg';
-import { Pointer } from 'lucide-react';
 
 const renderSubHeadingButton = (active) => {
     switch (active) {
@@ -76,7 +74,7 @@ export const HeroPage = (props) => {
             //     </Flex>
             // </BackgroundImage>
 
-            <BackgroundImage src={background}>
+            <BackgroundImage src={FluidWall}>
                 <Flex
                     id='shareinfo'
                     direction={'column'}
