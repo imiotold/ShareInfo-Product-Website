@@ -3,13 +3,11 @@ import heroAspirants from '../../../assets/ProductLogo/HeroAspirants.png';
 import { useNavigate } from 'react-router-dom';
 
 export const Heropage = () => {
-
     const navigate = useNavigate();
 
     const handleClick = (link) => {
         navigate(`${link}`);
-    }
-
+    };
 
     return (
         <Flex mih={'calc(100dvh - 80px)'} w={'100%'} justify={'center'} align={'center'}>

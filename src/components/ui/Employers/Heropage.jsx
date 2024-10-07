@@ -23,7 +23,11 @@ export const Heropage = () => {
                         growth.
                     </Text>
                     <Group>
-                        <Button onClick={() => window.open('https://recruiter.shareinfo.io', '_blank')} color='#FF6A00' radius={'md'} variant='light'>
+                        <Button
+                            onClick={() => window.open('https://recruiter.shareinfo.io', '_blank')}
+                            color='#FF6A00'
+                            radius={'md'}
+                            variant='light'>
                             Explore Resources
                         </Button>
 

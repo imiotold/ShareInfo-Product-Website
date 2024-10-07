@@ -50,9 +50,8 @@ export const Navbar = () => {
     return (
         <>
             <Flex
-                
                 className='navbar_component w-nav'
-                style={{zIndex:2147483646}}
+                style={{ zIndex: 2147483646 }}
                 align={'center'}
                 justify={'space-between'}
                 h={isMobile ? 60 : 80}
@@ -97,7 +96,12 @@ export const Navbar = () => {
                 </Button>
             </Flex>
 
-            <Drawer style={{zIndex:2147483647}} opened={drawerOpened} onClose={() => setDrawerOpened(false)} size='sm' withCloseButton={false}>
+            <Drawer
+                style={{ zIndex: 2147483647 }}
+                opened={drawerOpened}
+                onClose={() => setDrawerOpened(false)}
+                size='sm'
+                withCloseButton={false}>
                 <Paper>
                     <Group p={20} justify='space-between'>
                         {/* <Image

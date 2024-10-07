@@ -1,11 +1,10 @@
 import { Flex, Text, em, Title, BackgroundImage, Image } from '@mantine/core';
 import classes from '../../style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
-import FluidWall from '../../../../assets/background.svg';
+import FluidWall from '../../../../assets/gradientbg.svg';
 import badgelanding from '../../../../assets/badge.svg';
 import buttonlanding from '../../../../assets/button.svg';
 import iconslanding from '../../../../assets/iconslanding.svg';
-
 
 const handleHash = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -54,7 +53,14 @@ export const HeroPage = (props) => {
                     <Text mb={20} c={'white'} ta={'center'} fw={500} size={isMobile ? '1rem' : '1.5rem'}>
                         Built to bridge the gap between <br /> Aspirants, Institutes, and Recruiters
                     </Text>
-                    <Image onClick={()=>handleHash('explore')} draggable={false} style={{ cursor: 'pointer' }} mb={20} src={buttonlanding} w={{ base: '120PX', sm: '150px' }} />
+                    <Image
+                        onClick={() => handleHash('explore')}
+                        draggable={false}
+                        style={{ cursor: 'pointer' }}
+                        mb={20}
+                        src={buttonlanding}
+                        w={{ base: '120PX', sm: '150px' }}
+                    />
 
                     <Image draggable={false} style={{ pointerEvents: 'none' }} mt={60} src={iconslanding} w={{ base: '70%', sm: '20%' }} />
                 </Flex>

@@ -34,13 +34,11 @@ const ProductCardData = [
 ];
 
 export const SectionTwo = () => {
-
     const navigate = useNavigate();
 
     const handleClick = (link) => {
         navigate(`${link}`);
-    }
-
+    };
 
     return (
         <>
@@ -60,7 +58,15 @@ export const SectionTwo = () => {
                 spacing={{ base: 'md', sm: 'xl' }}
                 verticalSpacing={{ base: 'md', sm: 'xl' }}>
                 {ProductCardData.map((item, index) => (
-                    <Paper onClick={() => handleClick(item.link)} key={index} className='ProductCard' bg={'#090C0D'} p={30} radius={'lg'} w='100%' style={{ cursor: 'pointer' }} >
+                    <Paper
+                        onClick={() => handleClick(item.link)}
+                        key={index}
+                        className='ProductCard'
+                        bg={'#090C0D'}
+                        p={30}
+                        radius={'lg'}
+                        w='100%'
+                        style={{ cursor: 'pointer' }}>
                         <Box w={80}>
                             <Image src={item.image} w={'100%'} />
                         </Box>

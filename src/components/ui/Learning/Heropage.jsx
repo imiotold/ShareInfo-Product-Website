@@ -23,7 +23,11 @@ export const Heropage = () => {
                         landing your dream job, and embark on a successful career journey.
                     </Text>
                     <Group>
-                        <Button onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank')} color='#009F9D' radius={'md'} variant='light'>
+                        <Button
+                            onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank')}
+                            color='#009F9D'
+                            radius={'md'}
+                            variant='light'>
                             Explore Resources
                         </Button>
 
