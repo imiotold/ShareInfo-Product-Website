@@ -2,14 +2,11 @@ import { useEffect } from 'react';
 import { Flex } from '@mantine/core';
 import { Navbar } from '../ui/Navbar/Navbar';
 import { Footer } from '../ui/Footer/Footer';
-import { SectionThree } from '../ui/Aspirants/SectionThree';
 import { SectionTwo } from '../ui/Aspirants/SectionTwo';
 import { SectionFive } from '../ui/HomePage/SectionFive/SectionFive';
 import { OurRecruiters } from '../ui/Aspirants/OurRecruiters';
 import { TechCore } from '../ui/TechCore/TechCore';
 import { Featured } from '../ui/Featured/Featured';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { SectionOne } from '../ui/Learning/SectionOne';
 import { Challenges } from '../ui/Learning/Challenges';
 import { Connections } from '../ui/Learning/Connections';
@@ -20,7 +17,6 @@ import { Heropage } from '../ui/Learning/Heropage';
 export const Learning = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        // AOS.init();
     }, []);
     return (
         <>

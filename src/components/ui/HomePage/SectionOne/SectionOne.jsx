@@ -13,7 +13,12 @@ export const SectionOne = () => {
 
                 <Image w={{ base: '90%', md: '70%' }} className='no-select no-context-menu' src={FourPiller} />
 
-                <Button onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank', 'noopener,noreferrer')}  size='sm' radius={'md'} color='#F94612' rightSection={<IconExternalLink style={{ width: '70%', height: '70%' }} />}>
+                <Button
+                    onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank', 'noopener,noreferrer')}
+                    size='sm'
+                    radius={'md'}
+                    color='#F94612'
+                    rightSection={<IconExternalLink style={{ width: '70%', height: '70%' }} />}>
                     Get Started
                 </Button>
             </Flex>

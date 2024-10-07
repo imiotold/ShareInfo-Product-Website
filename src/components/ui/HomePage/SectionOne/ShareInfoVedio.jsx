@@ -3,15 +3,20 @@ import { Paper, Title, Text } from '@mantine/core';
 export const ShareInfoVedio = () => {
     return (
         <>
-            <div id='explore' >
-                <Title mt={50} c={'white'} className='text-custom_gradient_blue' style={{ fontFamily: 'Nunito' }} order={1} align={'center'}>
+            <div id='explore'>
+                <Title
+                    mt={50}
+                    c={'white'}
+                    className='text-custom_gradient_blue'
+                    style={{ fontFamily: 'Nunito' }}
+                    order={1}
+                    align={'center'}>
                     1% starts with ShareInfo
                 </Title>
                 <Text ta={'center'}>Bridge Your Ambition and Drive into Success! </Text>
-                <Paper mt={50} bg={'#0C0C0C'} p={10} style={{ borderRadius: '30px' }}  shadow='lg'>
+                <Paper mt={50} bg={'#0C0C0C'} p={10} style={{ borderRadius: '30px' }} shadow='lg'>
                     <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                         <iframe
-                            
                             style={{
                                 borderRadius: '23px',
                                 position: 'absolute',

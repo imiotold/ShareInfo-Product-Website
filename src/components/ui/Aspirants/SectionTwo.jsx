@@ -1,25 +1,35 @@
 import { Text, Title, Flex, Card, Group, Button, Box } from '@mantine/core';
 import { IconExternalLink } from '@tabler/icons-react';
-import { useNavigate } from 'react-router-dom';
-
 
 const cardData = [
     {
         title: 'Students',
-        description:
-            <div>Fuel Your Tech Ambition: Your Path to Success Starts Here. Gain the skills, confidence, and connections you need to excel in tech with ShareInfo&#39;s comprehensive resources.</div>,
+        description: (
+            <div>
+                Fuel Your Tech Ambition: Your Path to Success Starts Here. Gain the skills, confidence, and connections you need to excel in
+                tech with ShareInfo&#39;s comprehensive resources.
+            </div>
+        ),
         link: 'http://web.shareinfo.io/'
     },
     {
         title: 'Freshers',
-        description:
-            <div>Future tech leaders! Join us and unlock your potential. At ShareInfo, we&#39;re committed to nurturing the next generation of tech talent.</div>,
+        description: (
+            <div>
+                Future tech leaders! Join us and unlock your potential. At ShareInfo, we&#39;re committed to nurturing the next generation
+                of tech talent.
+            </div>
+        ),
         link: 'http://web.shareinfo.io/'
     },
     {
         title: 'Professionals',
-        description:
-            <div>Accelerate your journey to the top with ShareInfo. Our platform provides the resources, connections, and mentorship you need to excel in today&#39;s competitive tech landscape.</div>,
+        description: (
+            <div>
+                Accelerate your journey to the top with ShareInfo. Our platform provides the resources, connections, and mentorship you need
+                to excel in today&#39;s competitive tech landscape.
+            </div>
+        ),
         link: 'http://web.shareinfo.io/'
     },
     {
@@ -30,13 +40,6 @@ const cardData = [
     }
 ];
 export const SectionTwo = () => {
-
-    const navigate = useNavigate();
-
-    const handleClick = (link) => {
-        navigate(`${link}`);
-    }
-
     return (
         <>
             <Title c={'white'} style={{ fontFamily: 'Nunito' }} order={1} ta={'center'}>
@@ -57,7 +60,11 @@ export const SectionTwo = () => {
                                     {item.description}
                                 </Text>
                             </Box>
-                            <Button  onClick={() => window.open('http://web.shareinfo.io/', '_blank')} rightSection={<IconExternalLink size={14} />} radius={'md'} color='black'>
+                            <Button
+                                onClick={() => window.open('http://web.shareinfo.io/', '_blank')}
+                                rightSection={<IconExternalLink size={14} />}
+                                radius={'md'}
+                                color='black'>
                                 Get Started
                             </Button>
                         </Group>

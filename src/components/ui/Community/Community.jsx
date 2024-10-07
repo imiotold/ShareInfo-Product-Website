@@ -45,7 +45,13 @@ export const Community = () => {
                             <Text ta={{ base: 'center', sm: 'left' }} size='sm' c={'dimmed'} mt={10}>
                                 {feature.description}
                             </Text>
-                            <Button onClick={() => window.open('https://discord.gg/JZx5eCuz', '_blank')} radius={'md'} fullWidth variant='default' mt={20} color='orange'>
+                            <Button
+                                onClick={() => window.open('https://discord.gg/JZx5eCuz', '_blank')}
+                                radius={'md'}
+                                fullWidth
+                                variant='default'
+                                mt={20}
+                                color='orange'>
                                 Join Now
                             </Button>
                         </Flex>

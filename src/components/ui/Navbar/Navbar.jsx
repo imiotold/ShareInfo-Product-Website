@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper, ActionIcon, Divider } from '@mantine/core';
-import { IconExternalLink, IconX } from '@tabler/icons-react';
+import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper } from '@mantine/core';
+import { IconExternalLink } from '@tabler/icons-react';
 import Logo from '../../../assets/ShareinfoNavLogo.svg';
 import classes from '../../../components/ui/style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
@@ -50,9 +50,8 @@ export const Navbar = () => {
     return (
         <>
             <Flex
-                
                 className='navbar_component w-nav'
-                style={{zIndex:2147483646}}
+                style={{ zIndex: 2147483646 }}
                 align={'center'}
                 justify={'space-between'}
                 h={isMobile ? 60 : 80}
@@ -97,7 +96,12 @@ export const Navbar = () => {
                 </Button>
             </Flex>
 
-            <Drawer style={{zIndex:2147483647}} opened={drawerOpened} onClose={() => setDrawerOpened(false)} size='sm' withCloseButton={false}>
+            <Drawer
+                style={{ zIndex: 2147483647 }}
+                opened={drawerOpened}
+                onClose={() => setDrawerOpened(false)}
+                size='sm'
+                withCloseButton={false}>
                 <Paper>
                     <Group p={20} justify='space-between'>
                         {/* <Image

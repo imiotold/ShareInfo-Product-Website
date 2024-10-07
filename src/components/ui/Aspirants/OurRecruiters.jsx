@@ -1,11 +1,8 @@
 import { Flex, SimpleGrid, Text, Image } from '@mantine/core';
 import cadd from '../../../assets/companylogos/cadd.svg';
-import mizone from '../../../assets/companylogos/mizone.svg';
 import inexoft from '../../../assets/companylogos/inexoft.svg';
 import bni from '../../../assets/companylogos/bni.svg';
 import prospire from '../../../assets/companylogos/prospire.svg';
-import clg from '../../../assets/companylogos/college.svg';
-import inpro from '../../../assets/companylogos/inpro.svg';
 
 export const OurRecruiters = () => {
     return (

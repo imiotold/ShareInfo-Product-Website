@@ -6,14 +6,11 @@ import { SectionOne } from '../ui/Employers/SectionOne';
 import { CaseStudies } from '../ui/CaseStudies/CaseStudies';
 import { Featured } from '../ui/Featured/Featured';
 import { Flex } from '@mantine/core';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Heropage } from '../ui/Employers/Heropage';
 import { OurRecruiters } from '../ui/Aspirants/OurRecruiters';
 
 export const Employers = () => {
     useEffect(() => {
-        // AOS.init();
         window.scrollTo(0, 0);
     }, []);
     return (

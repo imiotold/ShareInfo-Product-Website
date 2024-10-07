@@ -7,8 +7,6 @@ import { SectionTwo } from '../ui/HomePage/SectionTwo/SectionTwo';
 import { SectionThree } from '../ui/HomePage/SectionThree/SectionThree';
 import { SectionFour } from '../ui/HomePage/SectionFour/SectionFour';
 import { SectionFive } from '../ui/HomePage/SectionFive/SectionFive';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Flex } from '@mantine/core';
 import { ShareInfoVedio } from '../ui/HomePage/SectionOne/ShareInfoVedio';
 import { MissionBanner } from '../ui/HomePage/SectionTwo/MissionBanner';
@@ -23,7 +21,6 @@ import { Featured } from '../ui/Featured/Featured';
 export const HomePage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        // AOS.init();
     }, []);
     return (
         <>
@@ -33,8 +30,6 @@ export const HomePage = () => {
             <div>
                 <HeroPage />
             </div>
-          
-            {/* <FloatingNavDemo /> */}
 
             <Flex align={'center'} justify={'center'}>
                 <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>

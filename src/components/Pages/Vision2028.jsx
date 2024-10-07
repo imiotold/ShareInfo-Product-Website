@@ -24,8 +24,7 @@ export const Vision2028 = () => {
                     <SectionOne />
                     <Featured />
                     <div>
-                    <SectionFive />
-
+                        <SectionFive />
                     </div>
                 </Flex>
             </Flex>

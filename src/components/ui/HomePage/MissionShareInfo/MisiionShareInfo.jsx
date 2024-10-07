@@ -1,9 +1,7 @@
 import { Paper, Title, Text, Box, Group, Button, Flex, ActionIcon } from '@mantine/core';
 import { IconExternalLink, IconTargetArrow } from '@tabler/icons-react';
-import vedio from '../../../../assets/video/mission.mp4'
 import { useNavigate } from 'react-router-dom';
 export const MisiionShareInfo = () => {
-
     const navigate = useNavigate();
     return (
         <>
@@ -47,7 +45,10 @@ export const MisiionShareInfo = () => {
 
                 <Paper bg={'#2B2B2B'} p={10} style={{ borderRadius: '30px', zIndex: 99 }} shadow='lg'>
                     <video style={{ borderRadius: '23px' }} loop autoPlay muted>
-                        <source src={vedio} type='video/mp4' />
+                        <source
+                            src={'https://res.cloudinary.com/dow8tfote/video/upload/f_auto:video,q_auto/tmcrcdnwop92cha85nfs'}
+                            type='video/mp4'
+                        />
                     </video>
                 </Paper>
             </Flex>

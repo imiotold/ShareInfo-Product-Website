@@ -1,11 +1,7 @@
 import { Paper, Title, Text, Box, Group, Button, Flex, ActionIcon } from '@mantine/core';
 import { IconExternalLink, IconWriting } from '@tabler/icons-react';
-import { useNavigate } from 'react-router-dom';
-import vedio from '../../../../assets/video/Learn.mp4'
 
 export const ForLearn = () => {
-    const navigate = useNavigate();
-
     return (
         <>
             <div>
@@ -32,7 +28,7 @@ export const ForLearn = () => {
                     <Paper bg={'#2B2B2B'} p={10} style={{ borderRadius: '30px', zIndex: 99 }} shadow='lg'>
                         <video style={{ borderRadius: '23px' }} loop autoPlay muted>
                             <source
-                                src={vedio}
+                                src={'https://res.cloudinary.com/dow8tfote/video/upload/f_auto:video,q_auto/pomy9qbyyls9dit8kslv'}
                                 type='video/mp4'
                             />
                         </video>
@@ -50,7 +46,6 @@ export const ForLearn = () => {
                                 size='md'
                                 radius={'md'}
                                 color='#F94612'
-                                
                                 onClick={() => window.open('https://web.shareinfo.io/redirect', '_blank', 'noopener,noreferrer')}
                                 rightSection={<IconExternalLink style={{ width: '70%', height: '70%' }} />}>
                                 Explore our Resource Range

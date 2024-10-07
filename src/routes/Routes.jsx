@@ -53,7 +53,7 @@ export const routes = [
     },
     {
         path: 'shareinfoai',
-        element: <Ai/>
+        element: <Ai />
     },
     {
         path: '*',

@@ -1,7 +1,5 @@
 import { Flex, Title, Text, Image, Group, Box, Paper, Stack, SimpleGrid } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
 export const Featured = () => {
-    const isMobile = useMediaQuery('(max-width: 768px)');
     return (
         <>
             <Flex justify={'center'} align={'center'} direction={'column'}>
