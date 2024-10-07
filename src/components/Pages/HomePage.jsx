@@ -31,11 +31,11 @@ export const HomePage = () => {
                 <HeroPage />
             </div>
 
-            <Flex align={'center'} justify={'center'}>
+            <Flex mt={{base: 50, sm: 150}} align={'center'} justify={'center'}>
                 <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>
-                    <div>
+                    {/* <div>
                         <ShareInfoVedio />
-                    </div>
+                    </div> */}
                     <div>
                         <SectionOne />
                     </div>
