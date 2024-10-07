@@ -1,10 +1,7 @@
 import { Flex, Text, em, Title, BackgroundImage, Image } from '@mantine/core';
 import classes from '../../style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
-import FluidWall from '../../../../assets/gradientbg.svg';
-import badgelanding from '../../../../assets/badge.svg';
-import buttonlanding from '../../../../assets/button.svg';
-import iconslanding from '../../../../assets/iconslanding.svg';
+
 
 const handleHash = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -39,14 +36,14 @@ export const HeroPage = (props) => {
             //     </Flex>
             // </BackgroundImage>
 
-            <BackgroundImage src={FluidWall}>
+            <BackgroundImage src={"https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/qgr124pw3mjejiulb2tw"}>
                 <Flex
                     id='shareinfo'
                     direction={'column'}
                     align={'center'}
                     justify={'center'}
                     h={isMobile ? 'calc(100dvh - 60px)' : 'calc(100dvh - 80px)'}>
-                    <Image draggable={false} style={{ pointerEvents: 'none' }} mb={20} src={badgelanding} w={{ base: '70%', sm: '17%' }} />
+                    <Image draggable={false} style={{ pointerEvents: 'none' }} mb={20} src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316261/jnn8pdcdo2jemcnz5rrs.svg'} w={{ base: '70%', sm: '17%' }} />
                     <Text mb={20} fw={600} size={isMobile ? '4rem' : '6.5rem'} className={classes.linearwipe}>
                         ShareInfo
                     </Text>
@@ -58,11 +55,11 @@ export const HeroPage = (props) => {
                         draggable={false}
                         style={{ cursor: 'pointer' }}
                         mb={20}
-                        src={buttonlanding}
+                        src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316260/larwplqodhmzjxulwydz.svg'}
                         w={{ base: '120PX', sm: '150px' }}
                     />
 
-                    <Image draggable={false} style={{ pointerEvents: 'none' }} mt={60} src={iconslanding} w={{ base: '70%', sm: '20%' }} />
+                    <Image draggable={false} style={{ pointerEvents: 'none' }} mt={60} src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316318/c1uxtn5ww27bi3dcy2t9.svg'} w={{ base: '70%', sm: '20%' }} />
                 </Flex>
             </BackgroundImage>
         :   <>

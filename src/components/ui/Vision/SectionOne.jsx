@@ -1,10 +1,9 @@
 import { Image, Flex, Box } from '@mantine/core';
-import graphImage from '../../../assets/Graph.svg';
 export const SectionOne = () => {
     return (
         <>
             <Flex justify={'center'} align={'center'} direction={'column'}>
-                <Image src={graphImage} className='no-context-menu no-select' />
+                <Image src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728317048/jrkuqvt2doibknfmlxjx.svg'} className='no-context-menu no-select' />
                 <Box mt={100}>
                     <span style={{ color: '#9C43F6', fontSize: 18, fontFamily: 'Nunito', fontWeight: 700, wordWrap: 'break-word' }}>
                         Imiot

@@ -1,8 +1,4 @@
 import { Flex, SimpleGrid, Text, Image } from '@mantine/core';
-import cadd from '../../../assets/companylogos/cadd.svg';
-import inexoft from '../../../assets/companylogos/inexoft.svg';
-import bni from '../../../assets/companylogos/bni.svg';
-import prospire from '../../../assets/companylogos/prospire.svg';
 
 export const OurRecruiters = () => {
     return (
@@ -68,16 +64,16 @@ const companyLogos = [
 
     {
         name: 'inexoft',
-        url: inexoft
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/usgitsntt13qyjw9ynna'
     },
 
     {
         name: 'bni',
-        url: bni
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/srta06mpyoqoxnilnjrw'
     },
     {
         name: 'cadd',
-        url: cadd
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/owjkcbt2wgzyg22ofdn3'
     },
     {
         name: 'daeseung',
@@ -85,6 +81,6 @@ const companyLogos = [
     },
     {
         name: 'prospire',
-        url: prospire
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/dxvu8pc2kvtmaiaovjqi'
     }
 ];

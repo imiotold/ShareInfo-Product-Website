@@ -1,10 +1,4 @@
 import { Flex, SimpleGrid, Text, Image } from '@mantine/core';
-import cadd from '../../../assets/companylogos/cadd.svg';
-import mizone from '../../../assets/companylogos/mizone.svg';
-import inexoft from '../../../assets/companylogos/inexoft.svg';
-import bni from '../../../assets/companylogos/bni.svg';
-import prospire from '../../../assets/companylogos/prospire.svg';
-import clg from '../../../assets/companylogos/college.svg';
 
 export const TrustedBy = () => {
     return (
@@ -29,7 +23,7 @@ const companyLogos = [
     },
     {
         name: 'college',
-        url: clg
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/r1j6ikrmklberouxzr3s'
     },
     {
         name: 'collegeVM',
@@ -87,21 +81,21 @@ const companyLogos = [
     },
     {
         name: 'mizone',
-        url: mizone
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/mfv9btdouzegsumwulqd'
     },
 
     {
         name: 'inexoft',
-        url: inexoft
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/usgitsntt13qyjw9ynna'
     },
 
     {
         name: 'bni',
-        url: bni
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/srta06mpyoqoxnilnjrw'
     },
     {
         name: 'cadd',
-        url: cadd
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/owjkcbt2wgzyg22ofdn3'
     },
     {
         name: 'daeseung',
@@ -109,6 +103,6 @@ const companyLogos = [
     },
     {
         name: 'prospire',
-        url: prospire
+        url: 'https://res.cloudinary.com/dow8tfote/image/upload/f_auto,q_auto/v1/company-logos/dxvu8pc2kvtmaiaovjqi'
     }
 ];

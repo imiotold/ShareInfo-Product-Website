@@ -1,5 +1,4 @@
 import { Button, Flex, Group, Image, Stack, Text, Title } from '@mantine/core';
-import heroAspirants from '../../../assets/ProductLogo/HeroAspirants.png';
 import { useNavigate } from 'react-router-dom';
 
 export const Heropage = () => {
@@ -41,7 +40,7 @@ export const Heropage = () => {
                     </Group>
                 </Stack>
                 <Flex align={'center'} justify={'center'} w={{ base: '90%', md: '50%' }}>
-                    <Image src={heroAspirants} w={'auto'} />
+                    <Image src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728315174/productlogos/hc7ekkkxxndw7yszv4wc.png'} w={'auto'} />
                 </Flex>
             </Flex>
         </Flex>

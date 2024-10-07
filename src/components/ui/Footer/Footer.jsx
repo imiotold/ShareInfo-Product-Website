@@ -1,6 +1,4 @@
 import { Flex, Stack, Text, Group, Badge, Box, Image, Divider, Anchor, ActionIcon } from '@mantine/core';
-import ImiotLogo from '../../../assets/Imiot.png';
-import ShareInfoLogo from '../../../assets/ShareinfoNavLogo.svg';
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandYoutube } from '@tabler/icons-react';
 
 export const Footer = () => {
@@ -15,7 +13,7 @@ export const Footer = () => {
                     justify={'space-between'}
                     w={{ base: '90%', md: '70%' }}>
                     <Box h={30}>
-                        <Image src={ShareInfoLogo} h={'100%'} w={'auto'} />
+                        <Image src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728315780/o0gfohi5lskipli6wk2g.svg'} h={'100%'} w={'auto'} />
                     </Box>
 
                     <Stack>
@@ -104,7 +102,7 @@ export const Footer = () => {
                 <Group align='center' py={20} gap={10} w={{ base: '90%', md: '70%' }} wrap='wrap' justify='space-between'>
                     <Group gap={30} justify='start'>
                         <Box h={50}>
-                            <Image src={ImiotLogo} h={'100%'} w={'auto'} />
+                            <Image src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728315705/q41qod77t6yirncu1nhq.png'} h={'100%'} w={'auto'} />
                         </Box>
                         <Anchor size='sm' c={'#C9C9C9'} href='https://www.imiot.co.in/' target='_blank' underline='never'>
                             About Imiot

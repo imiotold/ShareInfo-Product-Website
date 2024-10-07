@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper } from '@mantine/core';
 import { IconExternalLink } from '@tabler/icons-react';
-import Logo from '../../../assets/ShareinfoNavLogo.svg';
 import classes from '../../../components/ui/style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
 import { useNavigate } from 'react-router-dom';
@@ -67,7 +66,7 @@ export const Navbar = () => {
                             style={{ cursor: 'pointer' }}
                             mr={30}
                             h={isMobile ? 15 : 25}>
-                            <Image h={'100%'} w={'auto'} src={Logo} />
+                            <Image h={'100%'} w={'auto'} src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728315780/o0gfohi5lskipli6wk2g.svg'} />
                         </Box>
                     </Group>
                     {!isMobile &&
