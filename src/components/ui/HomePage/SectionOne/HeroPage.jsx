@@ -13,7 +13,6 @@ export const HeroPage = (props) => {
     const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
     return !props.vision ?
-
             <BackgroundImage src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728317859/x3jlvkxlpdnhucpqiotf.svg'}>
                 <Flex
                     id='shareinfo'
@@ -28,6 +27,7 @@ export const HeroPage = (props) => {
                         src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316261/jnn8pdcdo2jemcnz5rrs.svg'}
                         w={{ base: '70%', sm: '17%' }}
                     />
+
                     <Text mb={20} fw={600} size={isMobile ? '4rem' : '6.5rem'} className={classes.linearwipe}>
                         ShareInfo
                     </Text>
@@ -55,21 +55,15 @@ export const HeroPage = (props) => {
                 <Flex align={'center'} justify={'center'}>
                     <Flex gap={{ base: 50, md: 150 }} w={{ base: '90%', md: '70%' }} direction={'column'}>
                         <div id='explore'>
-                            <Title
-                                mt={50}
-                                c={'white'}
-                                
-                                style={{ fontFamily: 'Nunito' }}
-                                order={1}
-                                align={'center'}>
+                            <Title mt={50} c={'white'} style={{ fontFamily: 'Nunito' }} order={1} align={'center'}>
                                 1% starts with ShareInfo
                             </Title>
                             <Text ta={'center'}>Bridge Your Ambition and Drive into Success! </Text>
-                            <Paper mt={50} bg={'#0C0C0C'} p={10} style={{ borderRadius: '30px' }} shadow='lg'>
+                            <Paper mt={50} bg={'#0C0C0C'} p={5} style={{ borderRadius: '30px' }} shadow='lg'>
                                 <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                                     <iframe
                                         style={{
-                                            borderRadius: '23px',
+                                            borderRadius: '25px',
                                             position: 'absolute',
                                             top: 0,
                                             left: 0,

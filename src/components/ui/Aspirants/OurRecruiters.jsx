@@ -6,8 +6,8 @@ export const OurRecruiters = () => {
             <Text ta={'center'}>T O P&nbsp;&nbsp;R E C R U I T E R S</Text>
 
             <SimpleGrid mt={40} cols={{ base: 3, sm: 5 }} spacing={{ base: 'md', sm: 'md' }} verticalSpacing={{ base: 'md', sm: 'md' }}>
-                {companyLogos.map((item, index) => (
-                    <Flex key={index} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
+                {companyLogos.map((item) => (
+                    <Flex key={item.name} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
                         <Image fit={'contain'} w={'auto'} h={100} src={item.url} alt={item.name} />
                     </Flex>
                 ))}

@@ -66,13 +66,17 @@ export const Navbar = () => {
                             style={{ cursor: 'pointer' }}
                             mr={30}
                             h={isMobile ? 15 : 25}>
-                            <Image h={'100%'} w={'auto'} src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728315780/o0gfohi5lskipli6wk2g.svg'} />
+                            <Image
+                                h={'100%'}
+                                w={'auto'}
+                                src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728315780/o0gfohi5lskipli6wk2g.svg'}
+                            />
                         </Box>
                     </Group>
                     {!isMobile &&
-                        navLinkData.map((item, index) => (
+                        navLinkData.map((item) => (
                             <Text
-                                key={index}
+                                key={item.title}
                                 size='sm'
                                 onClick={() => {
                                     navigate(`/${item.link}`);

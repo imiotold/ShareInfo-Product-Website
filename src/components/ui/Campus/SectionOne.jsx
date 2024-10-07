@@ -35,8 +35,8 @@ export const SectionOne = () => {
                 cols={{ base: 1, sm: 3, lg: 3 }}
                 spacing={{ base: 'lg', sm: 'lg' }}
                 verticalSpacing={{ base: 'lg', sm: 'lg' }}>
-                {cardData.map((item, index) => (
-                    <Card flex={1} bg={'#090C0D'} key={index} shadow='sm' padding='lg' radius='lg'>
+                {cardData.map((item) => (
+                    <Card flex={1} bg={'#090C0D'} key={item.title} shadow='sm' padding='lg' radius='lg'>
                         <Card.Section>
                             <Image src={item.image} h={180} />
                         </Card.Section>

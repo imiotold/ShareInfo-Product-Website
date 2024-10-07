@@ -12,14 +12,13 @@ export const Featured = () => {
 
                 <SimpleGrid mt={30} cols={{ base: 1, sm: 2, lg: 3 }} spacing={{ base: 10, sm: 10 }} verticalSpacing={{ base: 10, sm: 10 }}>
                     <>
-                        {feactData.map((item, index) => (
-                            <Flex key={index} w={'100%'} h={'100%'} direction={'column'}>
-                                <Box key={index} w={'100%'} h={150}>
+                        {feactData.map((item) => (
+                            <Flex key={item.date} w={'100%'} h={'100%'} direction={'column'}>
+                                <Box w={'100%'} h={150}>
                                     <Image fit='cover' style={{ borderRadius: '15px 15px 0px 0px' }} h={'100%'} src={item.imageUrl} />
                                 </Box>
 
                                 <Paper
-                                    key={index}
                                     w={'100%'}
                                     h={'100%'}
                                     bg={'#090C0D'}
@@ -57,14 +56,9 @@ const feactData = [
         news: 'AIN News',
         imageUrl:
             'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        title: <div>Revolutionizing Recruitment: ShareInfo&#39;s Innovative Approach</div>,
-        description: (
-            <div>
-                ShareInfo is more than just a platform; it&#39;s a paradigm shift in the way recruitment is done. Our innovative approach
-                combines cutting-edge technology with a deep understanding of human behavior to create a seamless and efficient experience
-                for both candidates and recruiters.
-            </div>
-        )
+        title: "Revolutionizing Recruitment: ShareInfo's Innovative Approach",
+        description:
+            "ShareInfo is more than just a platform; it's a paradigm shift in the way recruitment is done. Our innovative approach combines cutting-edge technology with a deep understanding of human behavior to create a seamless and efficient experience for both candidates and recruiters."
     },
     {
         date: 'July 2024',

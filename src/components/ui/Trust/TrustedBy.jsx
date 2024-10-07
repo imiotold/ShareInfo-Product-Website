@@ -6,8 +6,8 @@ export const TrustedBy = () => {
             <Text ta={'center'}>T R U S T E D &nbsp;&nbsp;B Y</Text>
 
             <SimpleGrid mt={40} cols={{ base: 3, sm: 5 }} spacing={{ base: 'md', sm: 'md' }} verticalSpacing={{ base: 'md', sm: 'md' }}>
-                {companyLogos.map((item, index) => (
-                    <Flex key={index} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
+                {companyLogos.map((item) => (
+                    <Flex key={item.name} className='trusted_by' p={30} justify={'center'} align={'center'} w={'100%'} h={100}>
                         <Image fit={'contain'} w={'auto'} h={70} src={item.url} alt={item.name} />
                     </Flex>
                 ))}

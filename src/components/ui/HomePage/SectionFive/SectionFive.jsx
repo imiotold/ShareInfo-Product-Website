@@ -53,13 +53,13 @@ export const SectionFive = () => {
                 cols={{ base: 1, sm: 2, lg: 4 }}
                 spacing={{ base: 10, sm: 10 }}
                 verticalSpacing={{ base: 10, sm: 10 }}>
-                {features.map((feature, index) => (
+                {features.map((feature) => (
                     <Paper
                         onClick={() => {
                             feature.link === '#' ? '' : window.open(feature.link, '_blank');
                         }}
                         bg={'#090C0D'}
-                        key={index}
+                        key={feature.title}
                         className='CapableCard'
                         radius={'lg'}
                         w='100%'>

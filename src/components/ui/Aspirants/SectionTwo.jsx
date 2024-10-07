@@ -49,8 +49,8 @@ export const SectionTwo = () => {
             <Text ta={'center'}>With Our Intelligent System </Text>
 
             <Flex w={'100%'} gap={20} mt={40} direction={'column'} justify={'center'} align={'center'} wrap={'wrap'}>
-                {cardData.map((item, index) => (
-                    <Card w={'100%'} key={index} bg={'#090C0D'} shadow='sm' padding='lg' radius='lg'>
+                {cardData.map((item) => (
+                    <Card w={'100%'} key={item.title} bg={'#090C0D'} shadow='sm' padding='lg' radius='lg'>
                         <Group align='center' justify='space-between'>
                             <Box w={'80%'}>
                                 <Text size='lg' c={'white'} fw={500}>

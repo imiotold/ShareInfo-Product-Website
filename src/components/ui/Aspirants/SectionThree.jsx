@@ -49,9 +49,9 @@ export const SectionThree = () => {
             </Title>
 
             <Flex direction={isMobile ? 'column' : 'row'} mt={20} gap={20}>
-                {cardData.map((item, index) => (
+                {cardData.map((item) => (
                     <Card
-                        key={index}
+                        key={item.title}
                         radius={'lg'}
                         style={{
                             background: 'rgba(217, 217, 217, 0.48)'

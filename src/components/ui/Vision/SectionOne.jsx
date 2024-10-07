@@ -3,7 +3,10 @@ export const SectionOne = () => {
     return (
         <>
             <Flex justify={'center'} align={'center'} direction={'column'}>
-                <Image src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728317048/jrkuqvt2doibknfmlxjx.svg'} className='no-context-menu no-select' />
+                <Image
+                    src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728317048/jrkuqvt2doibknfmlxjx.svg'}
+                    className='no-context-menu no-select'
+                />
                 <Box mt={100}>
                     <span style={{ color: '#9C43F6', fontSize: 18, fontFamily: 'Nunito', fontWeight: 700, wordWrap: 'break-word' }}>
                         Imiot
@@ -16,7 +19,6 @@ export const SectionOne = () => {
                             fontWeight: 600,
                             wordWrap: 'break-word'
                         }}>
-                        {' '}
                         is transforming the management placement landscape with{' '}
                     </span>
                     <span style={{ color: '#EE5602', fontSize: 18, fontFamily: 'Nunito', fontWeight: 700, wordWrap: 'break-word' }}>

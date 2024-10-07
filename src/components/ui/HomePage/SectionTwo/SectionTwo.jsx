@@ -53,10 +53,10 @@ export const SectionTwo = () => {
                 cols={{ base: 1, xs: 2, md: 4 }}
                 spacing={{ base: 'md', sm: 'xl' }}
                 verticalSpacing={{ base: 'md', sm: 'xl' }}>
-                {ProductCardData.map((item, index) => (
+                {ProductCardData.map((item) => (
                     <Paper
                         onClick={() => handleClick(item.link)}
-                        key={index}
+                        key={item.title}
                         className='ProductCard'
                         bg={'#090C0D'}
                         p={30}

@@ -25,10 +25,10 @@ export const SectionThree = () => {
                             <video
                                 style={{
                                     borderRadius: '23px',
-                                    width: '100%', // Make the video responsive
-                                    height: 'auto', // Adjust height according to width
-                                    aspectRatio: '9 / 16', // Maintain 9:16 aspect ratio
-                                    objectFit: 'cover' // Ensure the video scales properly
+                                    width: '100%',
+                                    height: 'auto',
+                                    aspectRatio: '9 / 16',
+                                    objectFit: 'cover'
                                 }}
                                 loop
                                 autoPlay

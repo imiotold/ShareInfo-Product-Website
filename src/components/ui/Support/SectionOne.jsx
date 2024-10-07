@@ -19,8 +19,8 @@ export const SectionOne = () => {
                 cols={{ base: 1, sm: 2 }}
                 spacing={{ base: 10, sm: 10 }}
                 verticalSpacing={{ base: 10, sm: 10 }}>
-                {features.map((feature, index) => (
-                    <Paper bg={'#090C0D'} key={index} radius={'lg'} w='100%'>
+                {features.map((feature) => (
+                    <Paper bg={'#090C0D'} key={feature.title} radius={'lg'} w='100%'>
                         <Flex p={30} direction={'column'} align={{ base: 'center', sm: 'start' }}>
                             {feature.icon}
                             <Title ta={{ base: 'center', sm: 'left' }} mt={20} order={4} c={'white'} style={{ fontFamily: 'Nunito' }}>
@@ -50,8 +50,8 @@ export const SectionOne = () => {
                 cols={{ base: 1, sm: 2 }}
                 spacing={{ base: 10, sm: 10 }}
                 verticalSpacing={{ base: 10, sm: 10 }}>
-                {features2.map((feature, index) => (
-                    <Paper bg={'transparent'} key={index} radius={'lg'} w='100%'>
+                {features2.map((feature) => (
+                    <Paper bg={'transparent'} key={feature.title} radius={'lg'} w='100%'>
                         <Flex p={30} direction={'column'} align={{ base: 'center', sm: 'start' }}>
                             <Title ta={{ base: 'center', sm: 'left' }} mt={20} order={4} c={'white'} style={{ fontFamily: 'Nunito' }}>
                                 {feature.title}
