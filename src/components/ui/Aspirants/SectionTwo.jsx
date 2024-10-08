@@ -4,32 +4,21 @@ import { IconExternalLink } from '@tabler/icons-react';
 const cardData = [
     {
         title: 'Students',
-        description: (
-            <div>
-                Fuel Your Tech Ambition: Your Path to Success Starts Here. Gain the skills, confidence, and connections you need to excel in
-                tech with ShareInfo&#39;s comprehensive resources.
-            </div>
-        ),
+        description: 
+                "Fuel Your Tech Ambition: Your Path to Success Starts Here. Gain the skills, confidence, and connections you need to excel in tech with ShareInfo's comprehensive resources.",
         link: 'http://web.shareinfo.io/'
     },
     {
         title: 'Freshers',
-        description: (
-            <div>
-                Future tech leaders! Join us and unlock your potential. At ShareInfo, we&#39;re committed to nurturing the next generation
-                of tech talent.
-            </div>
-        ),
+        description:
+            " Future tech leaders! Join us and unlock your potential. At ShareInfo, we're committed to nurturing the next generation of tech talent.",
         link: 'http://web.shareinfo.io/'
     },
     {
         title: 'Professionals',
-        description: (
-            <div>
-                Accelerate your journey to the top with ShareInfo. Our platform provides the resources, connections, and mentorship you need
-                to excel in today&#39;s competitive tech landscape.
-            </div>
-        ),
+        description:
+            "Accelerate your journey to the top with ShareInfo. Our platform provides the resources, connections, and mentorship you need to excel in today's competitive tech landscape.",
+
         link: 'http://web.shareinfo.io/'
     },
     {

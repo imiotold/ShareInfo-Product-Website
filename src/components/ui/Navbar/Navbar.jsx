@@ -3,7 +3,7 @@ import { Button, Burger, Flex, Box, em, Group, Image, Text, Drawer, Paper } from
 import { IconExternalLink } from '@tabler/icons-react';
 import classes from '../../../components/ui/style.module.css';
 import { useMediaQuery } from '@mantine/hooks';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const navLinkData = [
     {
@@ -30,21 +30,15 @@ const navLinkData = [
 
 export const Navbar = () => {
     const isMobile = useMediaQuery(`(max-width: ${em(600)})`);
-    const [drawerOpened, setDrawerOpened] = useState(false);
     const navigate = useNavigate();
-
-    const setActive = (navLinkName) => {
-        localStorage.setItem('active', navLinkName);
-    };
-
+    const location = useLocation();
+    const [drawerOpened, setDrawerOpened] = useState(false);
     const [active, setActiveState] = useState('');
 
     useEffect(() => {
-        const activeLink = localStorage.getItem('active');
-        if (activeLink) {
-            setActiveState(activeLink);
-        }
-    }, []);
+        const currentPath = location.pathname.split('/')[1];
+        setActiveState(currentPath);
+    }, [location.pathname]);
 
     return (
         <>
@@ -61,7 +55,6 @@ export const Navbar = () => {
                         <Box
                             onClick={() => {
                                 navigate('/');
-                                localStorage.clear();
                             }}
                             style={{ cursor: 'pointer' }}
                             mr={30}
@@ -80,7 +73,6 @@ export const Navbar = () => {
                                 size='sm'
                                 onClick={() => {
                                     navigate(`/${item.link}`);
-                                    setActive(item.link);
                                 }}
                                 className={classes.hoverclass}
                                 c={active === item.link ? 'orange' : ''}>
@@ -106,19 +98,7 @@ export const Navbar = () => {
                 size='sm'
                 withCloseButton={false}>
                 <Paper>
-                    <Group p={20} justify='space-between'>
-                        {/* <Image
-                            onClick={() => {
-                                navigate('/');
-                                localStorage.clear();
-                            }}
-                            w={'130'}
-                            src={Logo}
-                        />
-                        <ActionIcon onClick={() => setDrawerOpened(false)} radius={'xl'} variant='default' size='md'>
-                            <IconX />
-                        </ActionIcon> */}
-                    </Group>
+                    <Group p={20} justify='space-between'></Group>
 
                     <Flex p={20} direction={'column'}>
                         <Text size='lg' fw={600} variant='gradient' gradient={{ from: 'blue', to: 'white', deg: 90 }}>
@@ -136,7 +116,6 @@ export const Navbar = () => {
                             p={20}
                             onClick={() => {
                                 navigate(`/${item.link}`);
-                                setActive(item.link);
                             }}
                             style={{ cursor: 'pointer', borderRadius: '20px' }}
                             radius={'md'}

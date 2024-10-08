@@ -1,6 +1,9 @@
 import { Flex, Image, Text } from '@mantine/core';
 import { Navbar } from '../ui/Navbar/Navbar';
 import { useMediaQuery } from '@mantine/hooks';
+import { Footer } from '../ui/Footer/Footer';
+
+
 
 export const Ai = () => {
     const isMobile = useMediaQuery('(max-width: 768px)');
@@ -45,6 +48,7 @@ export const Ai = () => {
                     w={'70%'}
                 />
             </Flex>
+            <Footer />
         </div>
     );
 };
