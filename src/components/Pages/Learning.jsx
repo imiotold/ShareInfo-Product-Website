@@ -44,9 +44,6 @@ export const Learning = () => {
                     <div>
                         <Internship />
                     </div>
-                    {/* <div>
-                        <SectionThree />
-                    </div> */}
                     <div>
                         <TechCore />
                     </div>

@@ -75,7 +75,7 @@ const features = [
     },
     {
         title: 'Realtime Assistance',
-        description: <div>Overcome technical challenges with ease. Get personalized support from a dedicated mentor.</div>,
+        description: 'Overcome technical challenges with ease. Get personalized support from a dedicated mentor.',
         icon: <IconTrendingUp style={{ width: '70%', height: '70%' }} stroke={1.5} />
     }
 ];

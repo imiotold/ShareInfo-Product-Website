@@ -49,7 +49,7 @@ export const SectionTwo = () => {
             </Flex>
 
             <SimpleGrid
-                mt={40}
+                mt={70}
                 cols={{ base: 1, xs: 2, md: 4 }}
                 spacing={{ base: 'md', sm: 'xl' }}
                 verticalSpacing={{ base: 'md', sm: 'xl' }}>
@@ -63,7 +63,7 @@ export const SectionTwo = () => {
                         radius={'lg'}
                         w='100%'
                         style={{ cursor: 'pointer' }}>
-                        <Box w={80}>
+                        <Box mt={'-50'} w={80}>
                             <Image src={item.image} w={'100%'} />
                         </Box>
                         <Title mt={10} c={'white'} style={{ fontFamily: 'Nunito' }} order={2}>
@@ -77,9 +77,9 @@ export const SectionTwo = () => {
                             <Text size='sm' flex={3}>
                                 {item.description}
                             </Text>
-                            <ActionIcon variant='filled' color='gray' radius='xl' aria-label='Settings'>
+                            {/* <ActionIcon variant='filled' color='gray' radius='xl' aria-label='Settings'>
                                 <IconChevronRight style={{ width: '70%', height: '70%' }} stroke={1.5} />
-                            </ActionIcon>
+                            </ActionIcon> */}
                         </Flex>
                     </Paper>
                 ))}

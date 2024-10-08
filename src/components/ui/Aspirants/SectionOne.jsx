@@ -10,12 +10,9 @@ export const SectionOne = () => {
         {
             image: 'https://images.unsplash.com/photo-1611348586755-53860f7ae57a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Learn from Scratch',
-            description: (
-                <div>
-                    Immerse yourself in real-world scenarios and apply your knowledge to solve practical problems. Our carefully crafted
-                    projects will challenge you to think critically.
-                </div>
-            )
+            description: "Immerse yourself in real-world scenarios and apply your knowledge to solve practical problems. Our carefully crafted projects will challenge you to think critically."
+               
+            
         },
         {
             image: 'https://images.unsplash.com/photo-1611532736570-dd6b097ecbb3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',

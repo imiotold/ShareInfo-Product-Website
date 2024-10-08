@@ -1,13 +1,54 @@
-import { Flex, Text, Button, ActionIcon, SimpleGrid, em, Box, Title, Paper, TextInput } from '@mantine/core';
-import { IconMail } from '@tabler/icons-react';
+import { useState } from 'react';
+import { Flex, Box, Title, Text, Button, TextInput, SimpleGrid, Paper, ActionIcon } from '@mantine/core';
+import { IconMail, IconBrain, IconStarsFilled, IconTargetArrow, IconSparkles } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
-import { IconBrain, IconStarsFilled, IconTargetArrow, IconSparkles } from '@tabler/icons-react';
+import { em } from '@mantine/core';
+import toast, { Toaster } from 'react-hot-toast';
+import { useMutation } from '@tanstack/react-query';
+
+const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+};
 
 export const SectionFive = () => {
     const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
+    const [email, setEmail] = useState('');
+
+    const mutation = useMutation({
+        mutationFn: async (email) => {
+            const response = await fetch(
+                'https://script.google.com/macros/s/AKfycbwQyUquaTR4Etv5fN203v9O8s7aIW8-OSheVauj2P1RQjt1zfsgIHzG52q1GwaZhA4K/exec',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams({
+                        Email: email
+                    })
+                }
+            );
+            return response.json();
+        }
+    });
+
+    const handleSubscribe = () => {
+        if (!validateEmail(email)) {
+            toast.error('Please enter a valid email address.');
+            return;
+        }
+        mutation.mutate(email); 
+        mutation.isPending && toast.pending('Subscribing...');
+        mutation.isSuccess && mutation.data.result === 'error' ?
+            toast.error(mutation.data.msg || 'Something went wrong, please try again later.')
+        :   toast.success('You have successfully subscribed!');
+        mutation.isError && toast.success(mutation.data.msg || 'Something went wrong, please try again later.');
+    };
 
     return (
         <>
+            <Toaster position='bottom-right' />
             <Flex
                 gap={{ base: 20, sm: 90 }}
                 justify={isMobile ? 'center' : 'space-between'}
@@ -40,8 +81,10 @@ export const SectionFive = () => {
                         variant='unstyled'
                         leftSection={<IconMail style={{ width: '70%', height: '70%' }} />}
                         placeholder='Sign up for Updates'
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
                     />
-                    <Button size='lg' radius={'md'} color='#F94612'>
+                    <Button size='lg' radius={'md'} color='#F94612' onClick={handleSubscribe} loading={mutation.isLoading}>
                         Subscribe
                     </Button>
                 </Flex>
@@ -78,13 +121,6 @@ export const SectionFive = () => {
                     </Paper>
                 ))}
             </SimpleGrid>
-
-            {/* <Text mt={20} ta={'center'} c={'dimmed'} size='sm'>
-                I accept Imiot’s Terms and Conditions <br /> and acknowledge that my information will be used in accordance with <br />
-                <Anchor ta={'center'} c={'violet'} size='xs'>
-                    Imiot’s Privacy Policy
-                </Anchor>
-            </Text> */}
         </>
     );
 };

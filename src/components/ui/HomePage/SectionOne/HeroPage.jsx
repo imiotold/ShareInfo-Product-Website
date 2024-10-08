@@ -28,20 +28,20 @@ export const HeroPage = (props) => {
                         w={{ base: '70%', sm: '17%' }}
                     />
 
-                    <Text mb={20} fw={600} size={isMobile ? '4rem' : '6.5rem'} className={classes.linearwipe}>
+                    <Text mb={20} fw={600} size={isMobile ? '4rem' : '9rem'} className={classes.linearwipe}>
                         ShareInfo
                     </Text>
-                    <Text mb={20} c={'white'} ta={'center'} fw={500} size={isMobile ? '1rem' : '1.5rem'}>
+                    <Text mb={20} c={'white'} ta={'center'} fw={500} size={isMobile ? '1rem' : '1.3rem'}>
                         Built to bridge the gap between <br /> Aspirants, Institutes, and Recruiters
                     </Text>
-                    <Image
+                    {/* <Image
                         onClick={() => handleHash('explore')}
                         draggable={false}
                         style={{ cursor: 'pointer' }}
                         mb={20}
                         src={'https://res.cloudinary.com/dow8tfote/image/upload/v1728316260/larwplqodhmzjxulwydz.svg'}
                         w={{ base: '120PX', sm: '150px' }}
-                    />
+                    /> */}
 
                     <Image
                         draggable={false}
