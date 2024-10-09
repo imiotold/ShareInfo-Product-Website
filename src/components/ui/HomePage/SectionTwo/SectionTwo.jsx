@@ -52,7 +52,7 @@ export const SectionTwo = () => {
                 mt={70}
                 cols={{ base: 1, xs: 2, md: 4 }}
                 spacing={{ base: 'md', sm: 'xl' }}
-                verticalSpacing={{ base: 'md', sm: 'xl' }}>
+                verticalSpacing={{ base: 'xl', sm: 'xl' }}>
                 {ProductCardData.map((item) => (
                     <Paper
                         onClick={() => handleClick(item.link)}
