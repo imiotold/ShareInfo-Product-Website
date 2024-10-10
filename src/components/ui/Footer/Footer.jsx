@@ -6,8 +6,8 @@ export const Footer = () => {
         <>
             <Flex mt={50} bg={'#090C0D'} id='footer' direction={'column'} align={'center'}>
                 <Flex
-                    pt={60}
-                    gap={20}
+                    pt={50}
+                    gap={{ base: '50', md: '20' }}
                     direction={{ base: 'column', md: 'row' }}
                     wrap={'wrap'}
                     justify={'space-between'}
